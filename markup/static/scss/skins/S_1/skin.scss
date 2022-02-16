@@ -1,0 +1,47 @@
+body {
+    background-color: $primary-fill;
+    font-weight: $font-weight;
+    color: $primary-text;
+}
+
+html {
+    height: 100%;
+    @include respond-from(to-sm) {
+        font-size: $font-size-xs;
+    }
+
+    font-size: $font-size;
+}
+
+//Footer bottom
+.w-outer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.w-inner {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+//Footer bottom END
+
+//MAIN WRAPPERS
+.w-center {
+    width: 100%;
+    max-width: $page-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 $page-horizontal-gap;
+
+    @include respond-from(sm-md) {
+        padding: 0 $page-horizontal-gap-sm;
+    }
+
+    @include respond-from(md-xl) {
+        padding: 0 $page-horizontal-gap-md;
+    }
+}
