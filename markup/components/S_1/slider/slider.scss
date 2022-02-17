@@ -1,0 +1,82 @@
+.slider {
+    position: relative;
+
+    &__wrap {
+
+        .slick-slide {
+            min-height: 100vh;
+            padding-top: 40px;
+        }
+
+        .slick-dots {
+            @extend %ul-reset;
+            display: flex;
+            position: absolute;
+            top: 1%;
+            left: 0;
+            right: 0;
+            width: 100px;
+            margin: 0 auto;
+            justify-content: space-between;
+            li button{
+                @extend %bttn-reset;
+                width: 20px;
+                height: 20px;
+                background: #E1E1E1;
+                border-radius: 50%;
+                font-size: 0;
+            }
+
+            .slick-active button {
+                background: #0077FF;
+            }
+
+        }
+    }
+
+
+
+    @include respond-from(md) {
+        &__wrap {
+            .slick-dots {
+                top: 4%;
+                margin: 0;
+            }
+
+            .slick-slide {
+                padding-top: 60px;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        &__slide-txt {
+            max-width: 668px;
+        }
+
+        &__slide-img {
+            max-width: 600px;
+            width: 100%;
+        }
+    }
+
+    @include respond-from(lg) {
+        &__wrap {
+            .slick-slide {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        &__slide-txt {
+            max-width: 768px;
+        }
+
+        &__slide-img {
+            max-width: 800px;
+            width: 100%;
+        }
+    }
+}

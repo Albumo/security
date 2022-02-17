@@ -6,11 +6,34 @@ body {
 
 html {
     height: 100%;
-    @include respond-from(to-sm) {
-        font-size: $font-size-xs;
+
+   font-size: $font-size;
+
+    @include respond-from(sm) {
+        font-size: $font-size;
+    }
+}
+
+h1 {
+    font-size: $font-size-h1;
+
+    @include respond-from(sm) {
+        font-size: $font-size-h1-sm;
     }
 
-    font-size: $font-size;
+    @include respond-from(lg) {
+        font-size: $font-size-h1-lg;
+    }
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+
+    @include support(object-fit, cover) {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 //Footer bottom
@@ -45,3 +68,5 @@ footer {
         padding: 0 $page-horizontal-gap-md;
     }
 }
+
+

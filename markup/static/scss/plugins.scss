@@ -1,0 +1,435 @@
+// plugins
+// slick
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
+    -webkit-touch-callout: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    &:focus {
+        outline: none
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand
+    }
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+
+    &:before, &:after {
+        content: "";
+        display: table
+    }
+
+    &:after {
+        clear: both
+    }
+
+    .slick-loading & {
+        visibility: hidden
+    }
+}
+
+.slick-slide {
+    float: left;
+    display: none;
+    height: 100%;
+
+    [dir="rtl"] & {
+        float: right
+    }
+
+    img {
+        display: block
+    }
+
+    &.slick-loading img {
+        display: none
+    }
+
+    min-height: 1px;
+
+    &.dragging img {
+        pointer-events: none
+    }
+
+    .slick-initialized & {
+        display: block
+    }
+
+    .slick-loading & {
+        visibility: hidden
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent
+    }
+}
+
+.slick-arrow.slick-hidden {
+    display: none
+}
+
+.slick-slide {
+    outline: none;
+}
+
+//full page
+html.fp-enabled, .fp-enabled body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+#superContainer {
+    position: relative;
+    height: 100%;
+    touch-action: none;
+    -ms-touch-action: none
+}
+
+.fp-section {
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.fp-slide {
+    float: left
+}
+
+.fp-slide, .fp-slidesContainer {
+    display: block;
+    height: 100%
+}
+
+.fp-slides {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out
+}
+
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%
+}
+
+.fp-slidesContainer {
+    position: relative;
+    float: left
+}
+
+.fp-controlArrow {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -38px;
+    z-index: 4;
+    border-style: solid;
+    cursor: pointer;
+    transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-color: transparent #fff transparent transparent;
+    border-width: 38.5px 34px 38.5px 0
+}
+
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-color: transparent transparent transparent #fff;
+    border-width: 38.5px 0 38.5px 34px
+}
+
+.fp-scrollable {
+    overflow: scroll
+}
+
+.fp-notransition {
+    transition: none !important;
+    -webkit-transition: none !important
+}
+
+#fullpage {
+    @include respond-from(sm) {
+        padding-top: 64px;
+    }
+}
+
+#fp-nav {
+    position: fixed;
+    top: 50%;
+    margin-top: -32px;
+    z-index: 100;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+#fp-nav.right {
+    right: 0
+}
+
+#fp-nav.left {
+    left: 17px
+}
+
+.fp-slidesNav {
+    position: absolute;
+    left: 50%;
+    z-index: 4;
+    opacity: 1
+}
+
+.fp-slidesNav.bottom {
+    bottom: 17px
+}
+
+.fp-slidesNav.top {
+    top: 17px
+}
+
+#fp-nav ul, .fp-slidesNav ul {
+    margin: 0;
+    padding: 0
+}
+
+#fp-nav ul li, .fp-slidesNav ul li {
+    position: relative;
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px
+}
+
+.fp-slidesNav ul li {
+    display: inline-block
+}
+
+#fp-nav ul li a, .fp-slidesNav ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-decoration: none;
+    cursor: pointer
+}
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    margin: -2px 0 0 -2px;
+    z-index: 1;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out
+}
+
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span {
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px
+}
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    display: block;
+    width: 0;
+    max-width: 220px;
+    overflow: hidden;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap;
+    opacity: 0
+}
+
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
+    width: auto;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+    -webkit-transition: opacity .2s ease-in
+}
+
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px
+}
+
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px
+}
+
+.fp-auto-height.fp-section, .fp-auto-height .fp-slide, .fp-auto-height .fp-tableCell {
+    height: auto !important
+}
+
+@media print {
+    html.fp-enabled, .fp-enabled body {
+        height: auto !important;
+        overflow: visible !important
+    }
+    html {
+        width: auto;
+        height: auto;
+        overflow: visible;
+        background: #fff
+    }
+    body {
+        float: none !important;
+        width: auto;
+        height: auto;
+        margin: 0 5%;
+        padding: 0;
+        overflow: visible;
+        background: #fff;
+        border: 0;
+        font-size: 20pt
+    }
+    #fp-nav, .fp-slidesNav, .fp-controlArrow {
+        display: none !important
+    }
+    h1 {
+        font-size: 28pt !important
+    }
+    h2 {
+        font-size: 24pt !important
+    }
+    h3 {
+        font-size: 22pt !important
+    }
+    h4 {
+        font-size: 22pt !important;
+        font-variant: small-caps
+    }
+    h5 {
+        font-size: 21pt !important
+    }
+    h6 {
+        font-size: 20pt !important;
+        font-style: italic
+    }
+    .fp-section, .fp-tableCell, .slimScrollDiv, .fp-scrollable {
+        position: relative;
+        float: none !important;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important
+    }
+    .fp-slidesContainer {
+        transform: none !important;
+        transition: none !important;
+        -ms-transition: none !important;
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important
+    }
+    .fp-slides, .fp-slidesContainer {
+        float: none !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: hidden !important
+    }
+    .fp-slides {
+        width: 800px !important;
+        height: 800px !important
+    }
+    .fp-slide {
+        position: static !important;
+        float: none !important;
+        width: 100% !important
+    }
+    .fullpage-wrapper {
+        position: static !important;
+        top: 0 !important;
+        left: 0 !important;
+        float: none !important;
+        display: block !important;
+        width: auto !important;
+        height: auto !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        padding: 0 !important;
+        overflow: visible !important;
+        text-align: left !important;
+        zoom: 1 !important;
+        transform: none !important;
+        transition: none !important;
+        -ms-transform: none !important;
+        -moz-transition: none !important;
+        -webkit-transform: none !important;
+        -webkit-transition: none !important;
+        -ms-transition: none !important
+    }
+    .fp-section {
+        page-break-after: always !important
+    }
+    .fp-slide {
+        page-break-after: always !important
+    }
+}
