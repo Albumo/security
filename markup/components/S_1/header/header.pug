@@ -1,7 +1,27 @@
 mixin header()
-
-    | <!-- ********** header-S-1 ********** -->
-
     header.header.js-header
         .w-center
-           p header
+            .header__wrapper.js-header-toggle.w-center
+                a(href="/").header__logo-wrap
+                    .header__logo
+                        img(src="static/img/content/logo.svg" alt="logo")
+                .header__burger-menu-wrap.js-header-burger
+                    .header__burger-menu
+                        span
+                        span
+                        span
+                nav.header__nav
+                    .header__nav-wrap
+                        .header__navi
+                            ul.header__list.header__menu-inner
+                                li.header__list-item.header__menu-item
+                                    a.header__menu-link.active.header__list-link.js-to-item(href="/") Главная
+                                li.header__list-item.header__menu-item
+                                    a.header__menu-link.header__list-link.js-to-item(href="#company") Компания
+                                li.header__list-item.header__menu-item
+                                    a.header__menu-link.header__list-link.js-to-item(href="#services") Услуги
+                                li.header__list-item.header__menu-item
+                                    a.header__menu-link.header__list-link.js-to-item(href="#contacts") Контакты
+                                li.header__list-item.header__menu-item
+                                    .btn-wrap
+                                        button.btn Услуги
