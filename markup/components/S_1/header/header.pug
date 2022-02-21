@@ -18,10 +18,29 @@ mixin header()
                                     a.header__menu-link.active.header__list-link.js-to-item(href="/") Главная
                                 li.header__list-item.header__menu-item
                                     a.header__menu-link.header__list-link.js-to-item(href="#company") Компания
-                                li.header__list-item.header__menu-item
-                                    a.header__menu-link.header__list-link.js-to-item(href="#services") Услуги
+                                li.header__list-item.header__menu-item.drop-wrap
+
+                                    .header__menu-link.header__list-link.header__link Услуги
+                                    ul.header__dropdown
+                                        li.header__dropdown-item
+                                            a.header__dropdown-link(href='/alarm.html') Монтаж систем охранной сигнализации
+                                        li.header__dropdown-item
+                                            a.header__dropdown-link(href='/automation.html') Автоматизация и диспетчеризация</br> инженерных систем зданий
+                                        li.header__dropdown-item
+                                            a.header__dropdown-link(href='/ckc.html') Задачи и преимущества СКС
+                                        li.header__dropdown-item
+                                            a.header__dropdown-link(href='/electrical.html') Электромонтажные работы
+                                        li.header__dropdown-item
+                                            a.header__dropdown-link(href='/fire.html') Установка автоматических систем противопожарной защиты
+                                        li.header__dropdown-item
+                                            a.header__dropdown-link(href='/multimedia.html') Монтаж мультимедийных систем
+                                        li.header__dropdown-item
+                                            a.header__dropdown-link(href='/skud.html') Установка системы СКУД
+                                        li.header__dropdown-item
+                                            a.header__dropdown-link(href='/video.html') Установка систем видеонаблюдения
+
                                 li.header__list-item.header__menu-item
                                     a.header__menu-link.header__list-link.js-to-item(href="#contacts") Контакты
                                 li.header__list-item.header__menu-item
                                     .btn-wrap
-                                        button.btn Услуги
+                                        button.btn.popup-btn Связаться с нами

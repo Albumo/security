@@ -1,0 +1,113 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+
+    .w-inner
+        .w-center
+            .video-banner
+                .video-banner__wrap
+                    .video-banner__text
+                        h1 Автоматизация и</br> диспетчеризация</br> инженерных</br> систем зданий
+                    .video-banner__video
+                        video( autoplay muted)
+                            source(src="static/img/content/2.mp4")
+            .mouse
+
+
+            p Современное здание – это комплекс инженерных систем – водоснабжение и канализация, вентиляция и кондиционирование, охранная и пожарная сигнализация. Неисправности в одной из сетей создают опасность к потере имущества и здоровья. Своевременный контроль и реагирование могут обеспечить диспетчеризация и автоматизация. Заказать проект, монтаж автоматизация инженерных систем зданий и сооружений можно на сайте компании ТОВ «ІБК «Територія Безпеки» – t-security.com.ua.
+            .w-gap-md
+            h3 Автоматизированная диспетчеризация
+            p Автоматизация инженерных систем зданий представляет выполнение таких функций:
+            ul.decorated-list
+                li.decorated-list__item Поддержка и контроль оптимальных технических параметров коммуникаций и систем;
+                li.decorated-list__item Оптимизация работы;
+                li.decorated-list__item Повышение ресурса функционирования оборудования;
+                li.decorated-list__item Снижение расходов энергетических ресурсов;
+                li.decorated-list__item защита оборудования от нештатных и аварийных ситуаций.
+
+            p Внедрение автоматизированной диспетчеризации в зданиях и на предприятиях заказчик получает:
+            ul.decorated-list
+                li.decorated-list__item Централизованный круглосуточный мониторинг состояния инженерных сетей;
+                li.decorated-list__item Увеличение комфорта в здании;
+                li.decorated-list__item Своевременное оповещение о возникших неисправностях;
+                li.decorated-list__item Снижение затрат на обслуживающий персонал здания.
+            .w-gap-md
+            h3 Комплекс работ, выполняемых ТОВ «ІБК «Територія Безпеки»
+            p Компания ТОВ «ІБК «Територія Безпеки» предлагает комплекс услуг по выполнению автоматической диспетчеризации:
+            ul.decorated-list
+                li.decorated-list__item Аудит здания для установки системы автоматизации;
+                li.decorated-list__item Разработка техдокументации и проекта;
+                li.decorated-list__item Разработка сметы и рабочей документации, основанной на ТЗ и полученных при аудите данных;
+                li.decorated-list__item Согласование проекта и сметы с заказчиком и с контролирующими органами;
+                li.decorated-list__item Монтаж оборудования;
+                li.decorated-list__item Контроль проведения работ по установке сетей;
+                li.decorated-list__item Пуско-наладочные работы и введение оборудования в эксплуатацию;
+                li.decorated-list__item обслуживание в гарантийный и пост гарантийный срок.
+
+            p Компания ТОВ «ІБК «Територія Безпеки» является официальным дилером ведущих производителей охранного оборудования, поэтому при автоматизации и диспетчеризации инженерных систем используются передовые технологии.
+            .w-gap-md
+            h3 Преимущества сотрудничества с профессионалами
+            p К основным преимуществам относятся:
+            ul.decorated-list
+                li.decorated-list__item высокая степень квалификации сотрудников компании;
+                li.decorated-list__item – доступная цена на предлагаемые услуги и оборудование. Низкая стоимость оборудования обусловлена прямыми поставками с заводов-изготовителей, минуя посредников;
+                li.decorated-list__item работаем только с оригинальными запчастями и комплектующими.
+            p Установка сетей автоматизации и диспетчеризации инженерных сетей компанией ТОВ «ІБК «Територія Безпеки» – это гарантия безопасности здания. Быстрая окупаемость данной системы происходит за счет экономии энергоресурсов и снижение обслуживающего персонала.
+        .w-gap-md
+            .contact
+                .contact__wrap
+                    .w-center
+                        h3#contacts.contact__title Всегда на связи!
+                        .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
+                        .contact__icons
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="tel:+38 (066) 245 85 35") +38 (066) 245 85 35
+
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="tel:+38 (044) 223 72 73") +38 (044) 223 72 73
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="mailto:t-security@ukr.net") t-security@ukr.net
+                        .contact__btn-wrap
+                            button.btn-secondary.popup-btn Связаться с нами
+        footer.footer
+            .msg-wrap
+                .msg(onclick='gsapMsg.reverse()')
+            .w-center
+                .footer__wrap
+                    a(href="/").footer__logo-wrap
+                        .footer__logo
+                            img(src="static/img/content/logo.svg" alt="logo")
+                    .footer__menu
+                        .footer__title Меню
+
+                        ul.footer__list
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/") Главная
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#company") Компания
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#services") Услуги
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#contacts") Контакты
+                    .footer__social-block
+                        .footer__title Соц. сети
+                        ul.footer__list
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="/")
+                                    img(src="static/img/content/fb.svg" alt="logo")
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="#company")
+                                    img(src="static/img/content/instagram.svg" alt="logo")
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="#services")
+                                    img(src="static/img/content/telegram.svg" alt="logo")
+                    .footer__address
+                        .footer__title Адрес
+                        .footer__menu-text Проспект Победы,</br> 136, Київ, 03115

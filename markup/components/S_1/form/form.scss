@@ -1,0 +1,76 @@
+
+.form, .form-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 0 10px 0;
+
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-flow: row wrap;
+        @include respond-from(xs) {
+            justify-content: space-between;
+        }
+    }
+
+    &__form {
+        width: 100%;
+
+        @include respond-from(xs) {
+            margin: 0;
+        }
+    }
+
+    &__group {
+        margin-bottom: 20px;
+        text-align: left;
+        transition: all .5s ease-in-out;
+
+        &:hover,
+        &:active,
+        &:focus {
+
+        }
+
+    }
+
+    &__control {
+        position: relative;
+        width: 100%;
+        padding: 18px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid $form-input-bd;
+        font-size: 16px;
+        color: $form-input-bd;
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-visible {
+            outline: none;
+        }
+
+        &::placeholder {
+            font-weight: 500;
+            color: $form-input-placeholder;
+            text-align: left;
+        }
+    }
+
+    @include respond-from(md) {
+        &__group {
+            .btn {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+

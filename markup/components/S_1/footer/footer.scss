@@ -1,6 +1,61 @@
 .footer {
     background: $footer-bg;
-    border-top: 5px solid $footer-bd;
+    padding: 40px 0;
 
+    &__logo {
+        max-width: 147px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        text-decoration: none;
+        color: #066BFF;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        @extend %ul-reset;
+        margin-bottom: 20px;
+    }
+
+    &__menu-link {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        color: #2F2E41;
+        transition: all .25s ease-in-out;
+
+        &:hover {
+            color: #0181FF;
+        }
+    }
+
+    &__menu-text {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        color: #2F2E41;
+    }
+
+    &__social-block .footer__list {
+        display: flex;
+        gap: 0 10px;
+    }
+
+    &__social {
+        width: 32px;
+        height: 32px;
+    }
+
+    @include respond-from(sm) {
+
+        &__wrap {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
 
 }

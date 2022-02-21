@@ -1,0 +1,93 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+
+    .w-inner
+        .w-center
+            .video-banner
+                .video-banner__wrap
+                    .video-banner__text
+                        h1 Монтаж систем</br> охранной </br>сигнализации
+                    .video-banner__video
+                        video( autoplay muted)
+                            source(src="static/img/content/6.mp4")
+            .mouse
+
+
+            p Проблемы охраны жизни человека и его имущества были, есть и будут. Во все времена эти вопросы решались разными методами и способами. Современные системы безопасности включают в себя целые комплексы мероприятий, в состав которых обязательно входят системы охранных сигнализаций.
+            p Собственно, по способу реализации поставленных задач, охранные системы условно можно разделить на два вида:
+            ul.decorated-list
+                li.decorated-list__item Автономные – несложные системы охраны объекта, включающие в себя датчики, извещатели, звуковые сирены, световые вспышки;
+                li.decorated-list__item Централизованные – подключенные к Пульту Центрального Управления (ПЦУ): состоят из набора сигнальных систем, передающих информацию по любым каналам связи на пульт отряда быстрого реагирования.
+            p Установка всех систем охранной сигнализации проводится по трем пунктам:
+
+            ul.decorated-list
+                li.decorated-list__item Периметр – датчики и извещатели, устанавливаемые по внешнему краю охраняемого объекта. Периметр является первым рубежом охраны – забор, ворота, окна, двери, канализационные люки, то есть все  возможные способы проникновения на объект;
+                li.decorated-list__item Объем – комплекс охранного оборудования, призванного охранять внутренние помещения объекта;
+                li.decorated-list__item Точка – отдельный объект внутри общего объекта охраны (например, сейф в офисе).
+            p Все мероприятия с использованием систем охранной сигнализации, реализуются по общей схеме:
+            ul.decorated-list
+                li.decorated-list__item Датчики фиксируют несанкционированные движения на охраняемом объекте – взлом замков, открытие дверей окон, проникновение на объект любыми способами;
+                li.decorated-list__item Извещатели выдают сигнал – звуковой и световой: отпугивают злоумышленника, передают сигнал-оповещение о проникновении злоумышленника на центральный пункт, по телефону оповещают владельца помещения о происшествии СМС-кой или другим сигналом;
+                li.decorated-list__item Видеорегистраторы проводят запись наблюдения за сектором объекта, передают картинку в реальном времени на ПЦУ или в облачное хранилище с помощью сети Интернет.
+
+            p Принцип работы системы охранной сигнализации описан выше лишь в общих чертах. Какую систему выбрать для охраны квартиры, офиса, производственных помещений, банковских учреждений, какими датчиками и видеокамерами их укомплектовать, рассчитать нужное количество аппаратуры – в решении этих вопросов вам помогут наши специалисты. Сотрудники ТОВ «ІБК «Територія Безпеки» ждут вашего звонка для заключения договора на  разработку проекта, монтаж, наладку и обслуживание системы охранной сигнализации.
+
+        .w-gap-md
+            .contact
+                .contact__wrap
+                    .w-center
+                        h3#contacts.contact__title Всегда на связи!
+                        .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
+                        .contact__icons
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="tel:+38 (066) 245 85 35") +38 (066) 245 85 35
+
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="tel:+38 (044) 223 72 73") +38 (044) 223 72 73
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="mailto:t-security@ukr.net") t-security@ukr.net
+                        .contact__btn-wrap
+                            button.btn-secondary.popup-btn Связаться с нами
+        footer.footer
+            .msg-wrap
+                .msg(onclick='gsapMsg.reverse()')
+            .w-center
+                .footer__wrap
+                    a(href="/").footer__logo-wrap
+                        .footer__logo
+                            img(src="static/img/content/logo.svg" alt="logo")
+                    .footer__menu
+                        .footer__title Меню
+
+                        ul.footer__list
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/") Главная
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#company") Компания
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#services") Услуги
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#contacts") Контакты
+                    .footer__social-block
+                        .footer__title Соц. сети
+                        ul.footer__list
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="/")
+                                    img(src="static/img/content/fb.svg" alt="logo")
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="#company")
+                                    img(src="static/img/content/instagram.svg" alt="logo")
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="#services")
+                                    img(src="static/img/content/telegram.svg" alt="logo")
+                    .footer__address
+                        .footer__title Адрес
+                        .footer__menu-text Проспект Победы,</br> 136, Київ, 03115

@@ -3,14 +3,21 @@
     "number": "S_1",
     "name": "header"
   },
+
   "component_slider": {
     "number": "S_1",
     "name": "slider"
   },
-
-
+  "component_popup": {
+    "number": "S_1",
+    "name": "popup"
+  },
   "component_footer": {
     "number": "S_1",
     "name": "footer"
+  },
+  "component_form": {
+    "number": "S_1",
+    "name": "form"
   }
 }

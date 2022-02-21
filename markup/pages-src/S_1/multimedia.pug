@@ -1,0 +1,80 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+
+    .w-inner
+        .w-center
+            .video-banner
+                .video-banner__wrap
+                    .video-banner__text
+                        h1 Монтаж</br> мультимедийных</br> систем
+                    .video-banner__video
+                        video( autoplay muted)
+                            source(src="static/img/content/3.mp4")
+            .mouse
+
+
+            p Установка мультимедиа в современных офисах – это возможность не только корпоративной трансляции видео, но и решения важных коммуникационных задач (развернуть корпоративную сеть). Заказать установку мультимедийной системы на предприятии или офисе можно на сайте t-security.com.ua. Специалисты компании ТОВ «ІБК «Територія Безпеки» составят проект сети и смонтируют необходимое оборудование.
+            p Организовать передачу информации при помощи видеосигнала сегодня стало проще – нет необходимости прокладывать километры дорогостоящих кабелей, устройства подключаются в существующую сетевую инфраструктуру. Корпоративные сети необходимы для трансляции видео потока на производственных предприятиях, с несколькими и цехами, или в офисах крупных компаний.
+            p Современные мультимедийные плееры генерируют необходимый контент автоматически, и для его передачи не нужен обслуживающий персонал – любая информация передается по нескольким каналам одновременно. Для трансляции нужно использовать IP камеры, которые записывают и передают видео и звук.
+            p В комнатах для переговоров или в конференц-залах устанавливаются мультимедийные экраны, на которых можно просматривать контент с телефона или ноутбука при помощи передатчика.
+            p Установить мультимедиа в офисе нужно доверить профессионалам из компании ТОВ «ІБК «Територія Безпеки». Сотрудничество с квалифицированными специалистами – это гарантия качественно выполненных монтажных работ.
+
+        .w-gap-md
+            .contact
+                .contact__wrap
+                    .w-center
+                        h3#contacts.contact__title Всегда на связи!
+                        .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
+                        .contact__icons
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="tel:+38 (066) 245 85 35") +38 (066) 245 85 35
+
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="tel:+38 (044) 223 72 73") +38 (044) 223 72 73
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="mailto:t-security@ukr.net") t-security@ukr.net
+                        .contact__btn-wrap
+                            button.btn-secondary.popup-btn Связаться с нами
+        footer.footer
+            .msg-wrap
+                .msg(onclick='gsapMsg.reverse()')
+            .w-center
+                .footer__wrap
+                    a(href="/").footer__logo-wrap
+                        .footer__logo
+                            img(src="static/img/content/logo.svg" alt="logo")
+                    .footer__menu
+                        .footer__title Меню
+
+                        ul.footer__list
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/") Главная
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#company") Компания
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#services") Услуги
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#contacts") Контакты
+                    .footer__social-block
+                        .footer__title Соц. сети
+                        ul.footer__list
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="/")
+                                    img(src="static/img/content/fb.svg" alt="logo")
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="#company")
+                                    img(src="static/img/content/instagram.svg" alt="logo")
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="#services")
+                                    img(src="static/img/content/telegram.svg" alt="logo")
+                    .footer__address
+                        .footer__title Адрес
+                        .footer__menu-text Проспект Победы,</br> 136, Київ, 03115

@@ -1,0 +1,87 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+
+    .w-inner
+        .w-center
+            .video-banner
+                .video-banner__wrap
+                    .video-banner__text
+                        h1 Установка</br> системы СКУД
+
+                    .video-banner__video
+                        video( autoplay muted)
+                            source(src="static/img/content/8.mp4")
+            .mouse
+            p Автоматическая система управлением въезда и выезда транспорта на территорию, выхода и входа людей в здание/помещение – система контроля и управления доступом (СКУД), призванная максимально улучшить систему безопасности на предприятии, фирме. Эта система сложна, выполняем много функций, требует тщательного проектирования, монтажа и постоянного обслуживания. Приобрести эту дорогую систему может только крупное предприятие (организация), поэтому ее обслуживание целесообразно доверить той фирме, которая проектировала и устанавливала ее.В общих чертах, Система контроля и управления доступом (СКУД) представляет собой электронную пропускную систему (турникеты, шлагбаумы) и пластиковые карточки доступа, которые выдаются каждому сотруднику. Эти карточки несут в себе информацию о владельце: его личные данные, должность, режим работы. Также идет фиксирование точного времени, когда эта карточка использовалась для прохода на/с территории предприятия. Кроме пластиковых карт, для получения доступа могут быть использованы ключи-брелоки, стикеры, отпечатки пальцев, сканирование сетчатки глаза. Все формы получения доступа зависят от уровня системыконтроля и секретности объекта: самые простые и широко используемые – пластиковые карты, самые сложные (потому дорогие) – сканирование сетчатки глаза.
+            .w-gap-md
+            h3 Какие бы ни были носители информации, все СКУД состоит из:
+            ul.decorated-list
+                li.decorated-list__item Устройство идентификации (считыватель);
+                li.decorated-list__item Контроллер
+                li.decorated-list__item Исполнительное устройство (пропускное).
+            p Вся система управляется компьютерной программой, которая не только контролирует доступ, но и ведет учет рабочего времени, записывает протокол всех событий. Многие СКУД оснащены охранной и противопожарной системой и подразделяются на 3 вида:
+            ul.decorated-list
+                li.decorated-list__item Автономная система – управляет доступом без передачи информации на контрольный пункт и не управляется оператором;
+                li.decorated-list__item Центральная (сетевая) система контроля доступа – передает всю информацию о событиях на центральный пункт охраны и управляется оператором;
+                li.decorated-list__item Универсальные системы – работают как автономные, так и, в случае необходимости, сетевые системы контроля доступом.
+            p Монтаж и обслуживание такой сложной системы надо доверять только профессионалам в этой области, а именно специалистам ТОВ «ІБК «Територія Безпеки», которые имеют большой опыт, заработанный годами и упорным трудом. Позвоните нам, заключите договор на установку и техническое обслуживание СКУД  и убедитесь в нашем высоком профессионализме.
+
+        .w-gap-md
+            .contact
+                .contact__wrap
+                    .w-center
+                        h3#contacts.contact__title Всегда на связи!
+                        .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
+                        .contact__icons
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="tel:+38 (066) 245 85 35") +38 (066) 245 85 35
+
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="tel:+38 (044) 223 72 73") +38 (044) 223 72 73
+                            .contact__icon
+                                .contact__img
+                                    img(src="static/img/content/phone.svg" alt="logo")
+                                a.contact__phone(href="mailto:t-security@ukr.net") t-security@ukr.net
+                        .contact__btn-wrap
+                            button.btn-secondary.popup-btn Связаться с нами
+        footer.footer
+            .msg-wrap
+                .msg(onclick='gsapMsg.reverse()')
+            .w-center
+                .footer__wrap
+                    a(href="/").footer__logo-wrap
+                        .footer__logo
+                            img(src="static/img/content/logo.svg" alt="logo")
+                    .footer__menu
+                        .footer__title Меню
+
+                        ul.footer__list
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/") Главная
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#company") Компания
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#services") Услуги
+                            li.footer__list-item
+                                a.footer__menu-link.js-to-item(href="/#contacts") Контакты
+                    .footer__social-block
+                        .footer__title Соц. сети
+                        ul.footer__list
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="/")
+                                    img(src="static/img/content/fb.svg" alt="logo")
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="#company")
+                                    img(src="static/img/content/instagram.svg" alt="logo")
+                            li.footer__list-item.footer__social
+                                a.footer__menu-link(href="#services")
+                                    img(src="static/img/content/telegram.svg" alt="logo")
+                    .footer__address
+                        .footer__title Адрес
+                        .footer__menu-text Проспект Победы,</br> 136, Київ, 03115

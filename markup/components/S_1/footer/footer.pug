@@ -1,4 +1,36 @@
 mixin footer()
     footer.footer
+        .msg-wrap
+            .msg(onclick='gsapMsg.reverse()')
         .w-center
-            p footer
+            .footer__wrap
+                a(href="/").footer__logo-wrap
+                    .footer__logo
+                        img(src="static/img/content/logo.svg" alt="logo")
+                .footer__menu
+                    .footer__title Меню
+
+                    ul.footer__list
+                        li.footer__list-item
+                            a.footer__menu-link.js-to-item(href="/") Главная
+                        li.footer__list-item
+                            a.footer__menu-link.js-to-item(href="#company") Компания
+                        li.footer__list-item
+                            a.footer__menu-link.js-to-item(href="#services") Услуги
+                        li.footer__list-item
+                            a.footer__menu-link.js-to-item(href="#contacts") Контакты
+                .footer__social-block
+                    .footer__title Соц. сети
+                    ul.footer__list
+                        li.footer__list-item.footer__social
+                            a.footer__menu-link(href="/")
+                                img(src="static/img/content/fb.svg" alt="logo")
+                        li.footer__list-item.footer__social
+                            a.footer__menu-link(href="#company")
+                                img(src="static/img/content/instagram.svg" alt="logo")
+                        li.footer__list-item.footer__social
+                            a.footer__menu-link(href="#services")
+                                img(src="static/img/content/telegram.svg" alt="logo")
+                .footer__address
+                    .footer__title Адрес
+                    .footer__menu-text Проспект Победы,</br> 136, Київ, 03115
