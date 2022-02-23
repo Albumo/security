@@ -4,8 +4,17 @@ block content
     | <!-- skin 1 -->
 
     .w-inner
+        +header
+
         .w-center
-            +slider
+            .video-banner
+                .video-banner__wrap
+                    .video-banner__text(style="max-width: 706px;")
+                        h1 Монтаж комплексных </br>систем безопасности
+                        p Комплексные системы безопасности (КСБ) – это комплекс инженерных систем, обеспечивающие безопасность на территории защищаемого объекта. Заказать проектирование и монтаж систем безопасности можно на официальном сайте компании ТОВ «ІБК «Територія Безпеки» – t-security.com.ua
+                    .video-banner__video
+                        img(src="static/img/content/password.svg")
+                .mouse
 
             h3 Функциональные возможности <span class="colored">КСБ</span>
             p.text-center КСБ выполняют функции контроля и защиты, обеспечивающие стабильную работу предприятий и организаций. Основная функция – это охрана имущества от внешних и внутренних угроз.
@@ -82,18 +91,15 @@ block content
                         .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
                         .contact__icons
                             .contact__icon
-                                .contact__img
-                                    img(src="static/img/content/phone.svg" alt="logo")
-                                a.contact__phone(href="tel:+38 (066) 245 85 35") +38 (066) 245 85 35
+                                a.contact__img.contact__phone-wrap(href="tel:+38 (066) 245 85 35")
+                                    .contact__phone +38 (066) 245 85 35
 
                             .contact__icon
-                                .contact__img
-                                    img(src="static/img/content/phone.svg" alt="logo")
-                                a.contact__phone(href="tel:+38 (044) 223 72 73") +38 (044) 223 72 73
+                                a.contact__img.contact__phone-wrap(href="tel:+38 (044) 223 72 73")
+                                    .contact__phone +38 (044) 223 72 73
                             .contact__icon
-                                .contact__img
-                                    img(src="static/img/content/phone.svg" alt="logo")
-                                a.contact__phone(href="mailto:t-security@ukr.net") t-security@ukr.net
+                                a.contact__img.contact__mail-wrap(href="mailto:t-security@ukr.net")
+                                    .contact__phone t-security@ukr.net
                         .contact__btn-wrap
                             button.btn-secondary.popup-btn Связаться с нами
     +footer

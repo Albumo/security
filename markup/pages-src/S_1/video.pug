@@ -4,6 +4,51 @@ block content
     | <!-- skin 1 -->
 
     .w-inner
+        header.header.js-header
+            .w-center
+                .header__wrapper.js-header-toggle
+                    a(href="/").header__logo-wrap
+                        .header__logo
+                            img(src="static/img/content/logo.svg" alt="logo")
+                    .header__burger-menu-wrap.js-header-burger
+                        .header__burger-menu
+                            span
+                            span
+                            span
+                    nav.header__nav
+                        .header__nav-wrap
+                            .header__navi
+                                ul.header__list.header__menu-inner
+                                    li.header__list-item.header__menu-item
+                                        a.header__menu-link.header__list-link.js-to-item(href="/") Главная
+                                    li.header__list-item.header__menu-item
+                                        a.header__menu-link.header__list-link.js-to-item(href="/about.html") Компания
+                                    li.header__list-item.header__menu-item.drop-wrap
+
+                                        .header__menu-link.header__list-link.active.header__link Услуги
+                                        ul.header__dropdown
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/alarm.html') Монтаж систем охранной сигнализации
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/automation.html') Автоматизация и диспетчеризация</br> инженерных систем зданий
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/ckc.html') Задачи и преимущества СКС
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/electrical.html') Электромонтажные работы
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/fire.html') Установка автоматических систем противопожарной защиты
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/multimedia.html') Монтаж мультимедийных систем
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/skud.html') Установка системы СКУД
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link.active(href='/video.html') Установка систем видеонаблюдения
+
+                                    li.header__list-item.header__menu-item
+                                        a.header__menu-link.header__list-link.js-to-item(href="/#contacts") Контакты
+                                    li.header__list-item.header__menu-item
+                                        .btn-wrap
+                                            button.btn.popup-btn Связаться с нами
         .w-center
             .video-banner
                 .video-banner__wrap
@@ -59,60 +104,55 @@ block content
                 li.decorated-list__item Монтаж в удобное для заказчика время.
                 li.decorated-list__item Оперативное и качественное выполнение работы.
             p Монтаж систем видеонаблюдения в компании ТОВ «ІБК «Територія Безпеки» – это гарантия безопасности охраняемого объекта.
-        .w-gap-md
-            .contact
-                .contact__wrap
-                    .w-center
-                        h3#contacts.contact__title Всегда на связи!
-                        .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
-                        .contact__icons
-                            .contact__icon
-                                .contact__img
-                                    img(src="static/img/content/phone.svg" alt="logo")
-                                a.contact__phone(href="tel:+38 (066) 245 85 35") +38 (066) 245 85 35
+    .w-gap-lg
+        .contact
+            .contact__wrap
+                .w-center
+                    h3#contacts.contact__title Всегда на связи!
+                    .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
+                    .contact__icons
+                        .contact__icon
+                            a.contact__img.contact__phone-wrap(href="tel:+38 (066) 245 85 35")
+                                .contact__phone +38 (066) 245 85 35
 
-                            .contact__icon
-                                .contact__img
-                                    img(src="static/img/content/phone.svg" alt="logo")
-                                a.contact__phone(href="tel:+38 (044) 223 72 73") +38 (044) 223 72 73
-                            .contact__icon
-                                .contact__img
-                                    img(src="static/img/content/phone.svg" alt="logo")
-                                a.contact__phone(href="mailto:t-security@ukr.net") t-security@ukr.net
-                        .contact__btn-wrap
-                            button.btn-secondary.popup-btn Связаться с нами
-        footer.footer
-            .msg-wrap
-                .msg(onclick='gsapMsg.reverse()')
-            .w-center
-                .footer__wrap
-                    a(href="/").footer__logo-wrap
-                        .footer__logo
-                            img(src="static/img/content/logo.svg" alt="logo")
-                    .footer__menu
-                        .footer__title Меню
+                        .contact__icon
+                            a.contact__img.contact__phone-wrap(href="tel:+38 (044) 223 72 73")
+                                .contact__phone +38 (044) 223 72 73
+                        .contact__icon
+                            a.contact__img.contact__mail-wrap(href="mailto:t-security@ukr.net")
+                                .contact__phone t-security@ukr.net
+                    .contact__btn-wrap
+                        button.btn-secondary.popup-btn Связаться с нами
+    footer.footer
+        .msg-wrap
+            .msg(onclick='gsapMsg.reverse()')
+        .w-center
+            .footer__wrap
+                a(href="/").footer__logo-wrap
+                    .footer__logo
+                        img(src="static/img/content/logo.svg" alt="logo")
+                .footer__menu
+                    .footer__title Меню
 
-                        ul.footer__list
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/") Главная
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/#company") Компания
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/#services") Услуги
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/#contacts") Контакты
-                    .footer__social-block
-                        .footer__title Соц. сети
-                        ul.footer__list
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link(href="/")
-                                    img(src="static/img/content/fb.svg" alt="logo")
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link(href="#company")
-                                    img(src="static/img/content/instagram.svg" alt="logo")
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link(href="#services")
-                                    img(src="static/img/content/telegram.svg" alt="logo")
-                    .footer__address
-                        .footer__title Адрес
-                        .footer__menu-text Проспект Победы,</br> 136, Київ, 03115
+                    ul.footer__list
+                        li.footer__list-item
+                            a.footer__menu-link.js-to-item(href="/") Главная
+                        li.footer__list-item
+                            a.footer__menu-link.js-to-item(href="/about.html") Компания
+                        li.footer__list-item
+                            a.footer__menu-link.js-to-item(href="/#contacts") Контакты
+                .footer__social-block
+                    .footer__title Соц. сети
+                    ul.footer__list
+                        li.footer__list-item.footer__social
+                            a.footer__menu-link.footer__fb(href="/")
+
+                        li.footer__list-item.footer__social
+                            a.footer__menu-link.footer__inst(href="/")
+
+                        li.footer__list-item.footer__social
+                            a.footer__menu-link.footer__telegram(href="/")
+
+                .footer__address
+                    .footer__title Адрес
+                    .footer__menu-text Проспект Победы,</br> 136, Київ, 03115
