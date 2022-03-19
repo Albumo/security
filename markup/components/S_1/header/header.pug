@@ -1,7 +1,7 @@
 mixin header()
     header.header.js-header
         .w-center
-            .header__wrapper.js-header-toggle.w-center
+            .header__wrapper.js-header-toggle
                 a(href="/").header__logo-wrap
                     .header__logo
                         img(src="static/img/content/logo.svg" alt="logo")
@@ -17,7 +17,7 @@ mixin header()
                                 li.header__list-item.header__menu-item
                                     a.header__menu-link.active.header__list-link.js-to-item(href="/") Главная
                                 li.header__list-item.header__menu-item
-                                    a.header__menu-link.header__list-link.js-to-item(href="#company") Компания
+                                    a.header__menu-link.header__list-link.js-to-item(href="/about.html") Компания
                                 li.header__list-item.header__menu-item.drop-wrap
 
                                     .header__menu-link.header__list-link.header__link Услуги
