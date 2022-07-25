@@ -1,0 +1,20 @@
+.countries {
+
+  &__lang {
+    border:2px solid #0181FF;
+  }
+
+  @include respond-from(lg) {
+
+    &__lang {
+      height: 36px;
+
+      &:hover,
+      &:focus {
+        border-color: #FF6584;
+      }
+    }
+  }
+
+}
+

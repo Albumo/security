@@ -8,17 +8,17 @@ mixin footer()
                     .footer__logo
                         img(src="static/img/content/logo.svg" alt="logo")
                 .footer__menu
-                    .footer__title Меню
+                    .footer__title.lng-footer-title1 Меню
 
-                    ul.footer__list
+                    ul.footer__list.lng-footer
                         li.footer__list-item
                             a.footer__menu-link.js-to-item(href="/") Главная
                         li.footer__list-item
                             a.footer__menu-link.js-to-item(href="/about.html") Компания
                         li.footer__list-item
-                            a.footer__menu-link.js-to-item(href="#contacts") Контакты
+                            a.footer__menu-link.js-to-item.lng-footer-contacts(href="#contacts") Контакты
                 .footer__social-block
-                    .footer__title Соц. сети
+                    .footer__title.lng-footer-title2 Соц. сети
                     ul.footer__list
                         li.footer__list-item.footer__social
                             a.footer__menu-link.footer__fb(href="/")
@@ -30,5 +30,5 @@ mixin footer()
                             a.footer__menu-link.footer__telegram(href="/")
 
                 .footer__address
-                    .footer__title Адрес
-                    .footer__menu-text Проспект Победы,</br> 136, Київ, 03115
+                    .footer__title.lng-footer-title3 Адрес
+                    .footer__menu-text.lng-footer-title4 Проспект Победы,</br> 136, Київ, 03115

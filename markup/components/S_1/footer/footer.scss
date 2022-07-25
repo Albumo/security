@@ -19,6 +19,16 @@
     &__logo {
         max-width: 147px;
         margin-bottom: 20px;
+
+        img {
+            display: inline-block;
+            width: 100%;
+
+            @include support(object-fit, cover) {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
     }
 
 
@@ -130,8 +140,12 @@
     }
 
     @include respond-from(md) {
-        &__logo-wrap,&__adress {
+        &__adress {
             width: unset;
+        }
+
+        &__logo-wrap {
+            width: 150px;
         }
     }
 

@@ -5,42 +5,44 @@ mixin header()
                 a(href="/").header__logo-wrap
                     .header__logo
                         img(src="static/img/content/logo.svg" alt="logo")
-                .header__burger-menu-wrap.js-header-burger
-                    .header__burger-menu
-                        span
-                        span
-                        span
-                nav.header__nav
-                    .header__nav-wrap
-                        .header__navi
-                            ul.header__list.header__menu-inner
-                                li.header__list-item.header__menu-item
-                                    a.header__menu-link.active.header__list-link.js-to-item(href="/") Главная
-                                li.header__list-item.header__menu-item
-                                    a.header__menu-link.header__list-link.js-to-item(href="/about.html") Компания
-                                li.header__list-item.header__menu-item.drop-wrap
+                .header__countries-wrap
+                    +countries
+                    .header__burger-menu-wrap.js-header-burger
+                        .header__burger-menu
+                            span
+                            span
+                            span
+                    nav.header__nav
+                        .header__nav-wrap
+                            .header__navi
+                                ul.header__list.header__menu-inner.lng-header
+                                    li.header__list-item.header__menu-item
+                                        a.header__menu-link.header__list-link.js-to-item(href="/", data-gxlang='inicio.home') Головна
+                                    li.header__list-item.header__menu-item
+                                        a.header__menu-link.header__list-link.js-to-item(data-gxlang='nav.about', href="/about.html") Компанія
+                                    li.header__list-item.header__menu-item.drop-wrap
 
-                                    .header__menu-link.header__list-link.header__link Услуги
-                                    ul.header__dropdown
-                                        li.header__dropdown-item
-                                            a.header__dropdown-link(href='/alarm.html') Монтаж систем охранной сигнализации
-                                        li.header__dropdown-item
-                                            a.header__dropdown-link(href='/automation.html') Автоматизация и диспетчеризация</br> инженерных систем зданий
-                                        li.header__dropdown-item
-                                            a.header__dropdown-link(href='/ckc.html') Задачи и преимущества СКС
-                                        li.header__dropdown-item
-                                            a.header__dropdown-link(href='/electrical.html') Электромонтажные работы
-                                        li.header__dropdown-item
-                                            a.header__dropdown-link(href='/fire.html') Установка автоматических систем противопожарной защиты
-                                        li.header__dropdown-item
-                                            a.header__dropdown-link(href='/multimedia.html') Монтаж мультимедийных систем
-                                        li.header__dropdown-item
-                                            a.header__dropdown-link(href='/skud.html') Установка системы СКУД
-                                        li.header__dropdown-item
-                                            a.header__dropdown-link(href='/video.html') Установка систем видеонаблюдения
+                                        .header__menu-link.header__list-link.header__link Послуги
+                                        ul.header__dropdown
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link( href='/alarm.html') Охоронна сигналізація
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/automation.html') Автоматизація та диспетчеризація</br> інженерних систем
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/ckc.html') Структуровані кабельні системи (СКС)
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/electrical.html') Електромонтажні роботи
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/fire.html') Системи пожежної безпеки
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/multimedia.html') Мультимедійні системи
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/skud.html') Системи контролю доступу (СКУД)
+                                            li.header__dropdown-item
+                                                a.header__dropdown-link(href='/video.html') Відеоспостереження
 
-                                li.header__list-item.header__menu-item
-                                    a.header__menu-link.header__list-link.js-to-item(href="#contacts") Контакты
-                                li.header__list-item.header__menu-item
-                                    .btn-wrap
-                                        button.btn.popup-btn Связаться с нами
+                                    li.header__list-item.header__menu-item
+                                        a.header__menu-link.header__list-link.js-to-item(href="#contacts") Контакти
+                                    li.header__list-item.header__menu-item
+                                        .btn-wrap
+                                            button.btn.popup-btn.lng-enu-btn Зв'язатися з нами

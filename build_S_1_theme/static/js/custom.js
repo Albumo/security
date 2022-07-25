@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
     var $burger = $('.js-header-burger');
@@ -51,36 +52,12 @@ $(document).ready(function () {
         } else {
             $('.js-header').removeClass('is-scroll');
         }
-
-        var $sections = $('section');
-        $sections.each(function (i, el) {
-            var top = $(el).offset().top - 100;
-            var bottom = top + $(el).height();
-            var scroll = $(window).scrollTop();
-            var id = $(el).attr('id');
-            if (scroll > top && scroll < bottom) {
-                $('a.active').removeClass('active');
-                $('a[href="#' + id + '"]').addClass('active');
-            }
-        });
     });
 
-    // slider
-    if ($('.js-slider').length) {
-        $('.js-slider').slick({
-            lazyLoad: 'ondemand',
-            dots: true,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-
-        });
-    }
 });
 
-// scroll to element
+// SCROLL TO ITEM
+
 function scrollToItem(elem) {
     var el = $(elem).attr('href').slice(1),
         elToScroll = $(`#${el}`),
@@ -99,12 +76,53 @@ function scrollToItem(elem) {
 
 moveElem();
 
+// SCROLL TO ITEM END
+
 function moveElem() {
     var blockfrom = $('.js-remove--from').html();
     $('.js-remove--to').html(blockfrom);
     return false;
 }
 
+
+//CHANDE LANGUAGE
+
+const select = document.querySelector('.countries__lang');
+const allLang = ['ua', 'ru'];
+
+select.addEventListener('change', changeURLLanguage);
+
+function changeURLLanguage() {
+    let lang = select.value
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
+
+}
+
+function changeLanguage() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#ua';
+        location.reload()
+    }
+
+    select.value = hash;
+
+    for (let key in langArr) {
+        let elem = document.querySelector('.lng-' + key);
+        if (elem) {
+            elem.innerHTML = langArr[key][hash];
+        }
+    }
+
+}
+
+changeLanguage();
+
+//CHANDE LANGUAGE END
+
+// SEND MESSAGE
 var msg = document.querySelector('.msg');
 var gsapMsg = gsap.to('.msg', 0.25, {
     autoAlpha: 1, y: -40, ease: Expo.inOut, paused: true
@@ -116,14 +134,23 @@ function send(event, php) {
     for (var i = 0, count = arrInput.length; i < count; i++) {
         arrInput[i].classList.remove('inputerror');
     }
+
     event.target.querySelector('button').disabled = true;
     showMsg('Wait. Sending...', '#b1b1b1');
-    var req = new XMLHttpRequest();
+    const req = new XMLHttpRequest();
     req.open('POST', php, true);
+
+    req.send(new FormData(event.target));
+
     req.onload = function () {
         event.target.querySelector('button').disabled = false;
+        console.log(req);
+
         if (req.status >= 200 && req.status < 400) {
             const json = JSON.parse(this.response);
+            console.log('result:', json.result);
+            console.log('status:', json.status);
+
             if (json.result === 'success') {
                 showMsg('Message send', '#36AE46', '1000');
                 setTimeout(function () {
@@ -148,7 +175,8 @@ function send(event, php) {
     req.onerror = function () {
         showMsg('Error sending request', '#DC352F');
     };
-    req.send(new FormData(event.target));
+
+    // req.send(new FormData(event.target));
 }
 
 function showMsg(message, color) {
@@ -157,16 +185,29 @@ function showMsg(message, color) {
     gsapMsg.restart();
 }
 
+function inputFile(e) {
+    var el = e.target.parentNode.querySelector('.count');
+    if (e.target.value !== '') el.innerHTML = 'Selected files: ' + e.target.files.length; else el.innerHTML = 'Select file';
+}
+
 for (var i = 0, count = arrInput.length; i < count; i++) {
     arrInput[i].addEventListener('focus', function () {
         this.nextElementSibling.classList.add('active');
     });
     arrInput[i].addEventListener('blur', function () {
-        if (this.value === false) { this.nextElementSibling.classList.remove('active'); }
+        if (this.value === false) {
+            this.nextElementSibling.classList.remove('active');
+        }
     });
 }
 
 window.onload = function () {
     var loadPage = gsap.timeline();
-    loadPage.to('#form', 0.7, { autoAlpha: 1, y: 0, ease: Expo.inOut });
+    loadPage.to('#form', 0.7, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Expo.inOut
+    });
 };
+
+// SEND MESSAGE END

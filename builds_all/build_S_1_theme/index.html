@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>Security project</title>
+    <title>T-security.com.ua</title>
     <meta content="" name="description"/>
     <meta content="" name="keywords"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,40 +12,49 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"><link href="static/css/main.min.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="favicon.ico"/><!--[if lt IE 9 ]><script src="static/js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar"><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   </head>
   <body>
-    <div class="w-outer"><!-- skin 1 -->
-      <div class="w-inner">
-        <header class="header js-header">
-          <div class="w-center">
-            <div class="header__wrapper js-header-toggle"><a class="header__logo-wrap" href="/">
-                <div class="header__logo"><img src="static/img/content/logo.svg" alt="logo"/></div></a>
+    <div class="w-outer">
+      <header class="header js-header">
+        <div class="w-center">
+          <div class="header__wrapper js-header-toggle"><a class="header__logo-wrap" href="/">
+              <div class="header__logo"><img src="static/img/content/logo.svg" alt="logo"/></div></a>
+            <div class="header__countries-wrap">
+              <div class="countries">
+                <div class="countries__select">
+                  <select class="countries__lang">
+                    <option value="ua">UA</option>
+                    <option value="ru">RU</option>
+                  </select>
+                </div>
+              </div>
               <div class="header__burger-menu-wrap js-header-burger">
                 <div class="header__burger-menu"><span></span><span></span><span></span></div>
               </div>
               <nav class="header__nav">
                 <div class="header__nav-wrap">
                   <div class="header__navi">
-                    <ul class="header__list header__menu-inner">
-                      <li class="header__list-item header__menu-item"><a class="header__menu-link active header__list-link js-to-item" href="/">Главная</a></li>
-                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" href="/about.html">Компания</a></li>
+                    <ul class="header__list header__menu-inner lng-header">
+                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" href="/" data-gxlang="inicio.home">Головна</a></li>
+                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" data-gxlang="nav.about" href="/about.html">Компанія</a></li>
                       <li class="header__list-item header__menu-item drop-wrap">
-                        <div class="header__menu-link header__list-link header__link">Услуги</div>
+                        <div class="header__menu-link header__list-link header__link">Послуги</div>
                         <ul class="header__dropdown">
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/alarm.html">Монтаж систем охранной сигнализации</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/automation.html">Автоматизация и диспетчеризация</br> инженерных систем зданий</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/ckc.html">Задачи и преимущества СКС</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/electrical.html">Электромонтажные работы</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/fire.html">Установка автоматических систем противопожарной защиты</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/multimedia.html">Монтаж мультимедийных систем</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/skud.html">Установка системы СКУД</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/video.html">Установка систем видеонаблюдения</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/alarm.html">Охоронна сигналізація</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/automation.html">Автоматизація та диспетчеризація</br> інженерних систем</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/ckc.html">Структуровані кабельні системи (СКС)</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/electrical.html">Електромонтажні роботи</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/fire.html">Системи пожежної безпеки</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/multimedia.html">Мультимедійні системи</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/skud.html">Системи контролю доступу (СКУД)</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/video.html">Відеоспостереження</a></li>
                         </ul>
                       </li>
-                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" href="#contacts">Контакты</a></li>
+                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" href="#contacts">Контакти</a></li>
                       <li class="header__list-item header__menu-item">
                         <div class="btn-wrap">
-                          <button class="btn popup-btn">Связаться с нами</button>
+                          <button class="btn popup-btn lng-enu-btn">Зв'язатися з нами</button>
                         </div>
                       </li>
                     </ul>
@@ -54,11 +63,13 @@
               </nav>
             </div>
           </div>
-        </header>
+        </div>
+      </header><!-- skin 1 -->
+      <div class="w-inner">
         <div class="w-center">
           <div class="video-banner">
             <div class="video-banner__wrap">
-              <div class="video-banner__text" style="max-width: 706px;">
+              <div class="video-banner__text lng-home-titling" style="max-width: 706px;">
                 <h1>Монтаж комплексных </br>систем безопасности</h1>
                 <p>Комплексные системы безопасности (КСБ) – это комплекс инженерных систем, обеспечивающие безопасность на территории защищаемого объекта. Заказать проектирование и монтаж систем безопасности можно на официальном сайте компании ТОВ «ІБК «Територія Безпеки» – t-security.com.ua</p>
               </div>
@@ -66,44 +77,28 @@
             </div>
             <div class="mouse"></div>
           </div>
-          <h3>Функциональные возможности <span class="colored">КСБ</span></h3>
-          <p class="text-center">КСБ выполняют функции контроля и защиты, обеспечивающие стабильную работу предприятий и организаций. Основная функция – это охрана имущества от внешних и внутренних угроз.</p>
-          <div class="w-gap-md">
-            <div class="text">
-              <div class="text__img"><img src="static/img/content/lock.svg"></div>
-              <div class="text__wrap">
-                <div class="text__left"><span>Хищение имущества и документации</span></div>
-                <div class="w-gap-sm"></div>
-                <div class="text__right"><span>Возникновение пожароопасной ситуации, которая может причинить материальные потери. Именно системы безопасности своевременно оповещают о подобных угрозах, а также обеспечивают высокую степень контроля доступа на охраняемые объекты.</span></div>
-                <div class="w-gap-sm"></div>
-                <div class="text__left"><span>Коллекторский захват объекта</span></div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="w-gap-lg"></div>
         <div class="control">
           <div class="w-center">
             <div class="control__wrap">
-              <h3 class="control__title">Состав КСБ</h3>
               <div class="w-gap-sm"></div>
-              <p class="control__center">Монтаж комплексных систем безопасности проводят для обеспечения полного контроля охраняемой территории. В комплектацию КСБ входят.</p>
+              <p class="control__center lng-home-kcb-text4">Монтаж комплексних систем безпеки проводять для забезпечення повного контролю території, що охороняється. До складу комплексних систем безпеки входять:</p>
               <div class="w-gap-md"></div>
               <div class="control__blocks-wrap">
                 <div class="control__block control__first-col">
                   <div class="control__block-img"><img src="static/img/content/first-col.svg" alt="logo"></div>
-                  <div class="control__block-content"><span><strong>Видеонаблюдение.</strong> Комплект видеонаблюдения обеспечивает круглосуточное слежение за объектом, как снаружи, так и внутри. Видеонаблюдение эффективно для охраны административных зданий, крупных и мелких промышленных предприятий, частных домов и складских помещений.</span></div>
+                  <div class="control__block-content"><span class="lng-home-kcb-text5"><strong>Видеонаблюдение.</strong> Комплект видеонаблюдения обеспечивает круглосуточное слежение за объектом, как снаружи, так и внутри. Видеонаблюдение эффективно для охраны административных зданий, крупных и мелких промышленных предприятий, частных домов и складских помещений.</span></div>
                 </div>
                 <div class="control__block control__second-col">
-                  <div class="control__block-img"><img src="static/img/content/second-col.svg" alt="logo"></div>
-                  <div class="control__block-content"><span><strong>Контроль доступа</strong> – это первое, о чем необходимо позаботиться предприятию. Охрана не всегда справляется с поставленной задачей, да и человеческий фактор иногда играет важную роль. Автоматизированный доступ – это установка турникетов, шлагбаумов, сканеров лиц и автомобильных номеров.</span></div>
+                  <div class="control__block-content"><span class="lng-home-kcb-text6"><strong>Контроль доступа</strong> – это первое, о чем необходимо позаботиться предприятию. Охрана не всегда справляется с поставленной задачей, да и человеческий фактор иногда играет важную роль. Автоматизированный доступ – это установка дверей разного уровня доступа, турникетов, шлагбаумов, сканеров лиц и автомобильных номеров.</span></div>
                   <div class="control__block-content control__block-content--nth w-gap-md">
-                    <div class="control__block-img"><img src="static/img/content/second-col-nth.svg" alt="logo"></div><span><strong>Охранная сигнализация</strong> устанавливается для защиты периметра территорий, зданий.</span>
+                    <div class="control__block-img"><img src="static/img/content/second-col-nth.svg" alt="logo"></div><span class="lng-home-kcb-text7"><strong>Охранная сигнализация</strong> устанавливается для защиты помещений от проникновения третих лиц в квартиры, дома, периметра территорий, зданий.</span>
                   </div>
                 </div>
                 <div class="control__block control__third-col">
                   <div class="control__block-img"><img src="static/img/content/third-col.svg" alt="logo"></div>
-                  <div class="control__block-content"><span><strong>Установка системы пожарной безопасности</strong> – это своевременное выявление и предупреждение об опасности возгорания. Существует несколько видов оборудования, которые реагируют на дым, повышение температуры, пламя. Чтобы обеспечить высокую степень защиты, нужно устанавливать комбинированную пожарную сигнализацию.</span></div>
+                  <div class="control__block-content"><span class="lng-home-kcb-text8"><strong>Автоматические системы противопожарной безопасности</strong> – и системы оповещения о пожаре – это средства раннего обнаружения пожара и предупреждение об опасности возгорания. Существует несколько типов оборудования адресные и неадресные, которые реагируют на дым, повышение температуры, пламя. Системы оповещения бывают речевые, звуковые, свето и светозвуковые.</span></div>
                 </div>
               </div>
             </div>
@@ -116,44 +111,47 @@
               <div class="benefits__img"><img src="static/img/content/benefits.svg"></div>
               <div class="benefits__text-wrap">
                 <div class="benefits__text">
-                  <h2 class="benefits__title">Преимущества установки КСБ</h2>
-                  <p>Основные преимущества комплексного подхода к монтажу </br>технических систем безопасности</p>
+                  <h2 class="benefits__title lng-home-kcb-title2">Переваги встановлення комплексних систем безпеки</h2>
+                  <p class="lng-home-kcb-text9">Основні переваги комплексного підходу до монтажу </br>технічних систем безпеки</p>
                 </div>
               </div>
             </div>
             <div class="benefits__items">
               <div class="benefits__items-up">
-                <div class="benefits__item"><span>Оперативность – установка КСБ обеспечивает оперативный сбор и передачу информации.</span></div>
-                <div class="benefits__item"><span>Интегрированность всех систем в единое информационное пространство.</span></div>
+                <div class="benefits__item"><span class="lng-home-kcb-text10">Оперативність - встановлення систем безпеки забезпечує оперативний збір та передачу інформації на центральний пульт управління.</span></div>
+                <div class="benefits__item"><span class="lng-home-kcb-text11">Інтегрованість всіх систем у єдиний інформаційний простір.</span></div>
               </div>
-              <div class="benefits__item benefits__item-third"><span>При правильном проектировании и монтаже комплексных систем безопасности обеспечивается высокая степень надежности коммуникаций.</span></div>
+              <div class="benefits__item benefits__item-third"><span class="lng-home-kcb-text12">При правильному проектуванні, монтажі та грамотному технічному обслуговуванні комплексних систем безпеки забезпечується високий ступінь безпеки об'єктів, що захищаються.</span></div>
             </div>
           </div>
           <div class="w-gap-lg"></div>
           <div class="attention">
             <div class="attention__item">
-              <div class="attention__text">Компания ТОВ «ІБК «Територія Безпеки» предлагает проектирование, установку и оборудование КСБ по <strong>доступным ценам.</strong> Заказать услуги и купить необходимое оборудование и комплектующие можно на сайте <strong>www.t-security.com.ua.</br> Квалифицированные специалисты</strong> помогут организовать защиту и контроль над охраняемым объектом.</div>
+              <div class="attention__text lng-home-kcb-text13">Компанія ТОВ «ІБК «Територія Безпеки» пропонує проектування, встановлення та обладнання систем безпеки за доступними цінами. Замовити послуги та купити необхідне обладнання та комплектуючі можна на сайті </br>www.t-security.com.ua. Кваліфіковані фахівці допоможуть організувати захист і контроль над об'єктом, що охороняється.</div>
               <div class="attention__img"><img src="static/img/content/attention.svg" alt="logo"></div>
             </div>
           </div>
         </div>
         <div class="w-gap-lg">
           <div class="contact">
-            <div class="contact__wrap">
-              <div class="w-center">
-                <h3 class="contact__title" id="contacts">Всегда на связи!</h3>
-                <div class="contact__text">Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!</div>
-                <div class="contact__icons">
-                  <div class="contact__icon"><a class="contact__img contact__phone-wrap" href="tel:+38 (066) 245 85 35">
-                      <div class="contact__phone">+38 (066) 245 85 35</div></a></div>
-                  <div class="contact__icon"><a class="contact__img contact__phone-wrap" href="tel:+38 (044) 223 72 73">
-                      <div class="contact__phone">+38 (044) 223 72 73</div></a></div>
-                  <div class="contact__icon"><a class="contact__img contact__mail-wrap" href="mailto:t-security@ukr.net">
-                      <div class="contact__phone">t-security@ukr.net</div></a></div>
+            <div class="w-center">
+              <div class="contact__wrap">
+                <div class="contact__left-side">
+                  <h3 class="contact__title lng-cbanner-title" id="contacts">Завжди на зв'язку!</h3>
+                  <div class="contact__text lng-cbanner-txt">Чи готові почати свій наступний проект з нами? Чудово! Зателефонуйте нам або надішліть нам листа, і ми зв'яжемося з вами якнайшвидше!</div>
+                  <div class="contact__icons">
+                    <div class="contact__icon"><a class="contact__img contact__phone-wrap" href="tel:+38 (066) 245 85 35">
+                        <div class="contact__phone">+38 (066) 245 85 35</div></a></div>
+                    <div class="contact__icon"><a class="contact__img contact__phone-wrap" href="tel:+38 (044) 223 72 73">
+                        <div class="contact__phone">+38 (044) 223 72 73</div></a></div>
+                    <div class="contact__icon"><a class="contact__img contact__mail-wrap" href="mailto:t-security@ukr.net">
+                        <div class="contact__phone">t-security@ukr.net</div></a></div>
+                  </div>
+                  <div class="contact__btn-wrap">
+                    <button class="btn-secondary popup-btn lng-cbanner-btn">Зв'язатися з нами</button>
+                  </div>
                 </div>
-                <div class="contact__btn-wrap">
-                  <button class="btn-secondary popup-btn">Связаться с нами</button>
-                </div>
+                <div class="contact__right-side"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1602730048103!2d30.3633147158837!3d50.456740094792465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc91b1df271f%3A0xc4e7575dd6228554!2z0KLQpiBWTUIsINC_0YDQvtGB0L8uINCf0L7QsdC10LTRiywgMTM2LCDQmtC40LXQsiwgMDMxMTU!5e0!3m2!1sru!2sua!4v1658220407200!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
               </div>
             </div>
           </div>
@@ -167,15 +165,15 @@
           <div class="footer__wrap"><a class="footer__logo-wrap" href="/">
               <div class="footer__logo"><img src="static/img/content/logo.svg" alt="logo"/></div></a>
             <div class="footer__menu">
-              <div class="footer__title">Меню</div>
-              <ul class="footer__list">
+              <div class="footer__title lng-footer-title1">Меню</div>
+              <ul class="footer__list lng-footer">
                 <li class="footer__list-item"><a class="footer__menu-link js-to-item" href="/">Главная</a></li>
                 <li class="footer__list-item"><a class="footer__menu-link js-to-item" href="/about.html">Компания</a></li>
-                <li class="footer__list-item"><a class="footer__menu-link js-to-item" href="#contacts">Контакты</a></li>
+                <li class="footer__list-item"><a class="footer__menu-link js-to-item lng-footer-contacts" href="#contacts">Контакты</a></li>
               </ul>
             </div>
             <div class="footer__social-block">
-              <div class="footer__title">Соц. сети</div>
+              <div class="footer__title lng-footer-title2">Соц. сети</div>
               <ul class="footer__list">
                 <li class="footer__list-item footer__social"><a class="footer__menu-link footer__fb" href="/"></a></li>
                 <li class="footer__list-item footer__social"><a class="footer__menu-link footer__inst" href="/"></a></li>
@@ -183,8 +181,8 @@
               </ul>
             </div>
             <div class="footer__address">
-              <div class="footer__title">Адрес</div>
-              <div class="footer__menu-text">Проспект Победы,</br> 136, Київ, 03115</div>
+              <div class="footer__title lng-footer-title3">Адрес</div>
+              <div class="footer__menu-text lng-footer-title4">Проспект Победы,</br> 136, Київ, 03115</div>
             </div>
           </div>
         </div>
@@ -192,24 +190,30 @@
       <div class="popup">
         <div class="popup__wrap"><span class="js-close form__close popup__close"></span>
           <div class="popup__title">Напишите нам</div>
-          <form class="form__form" enctype="multipart/form-data" action="" method="post" id="form" onsubmit="send(event, 'send.php')">
-            <div class="form__group">
-              <input class="form__control" type="text" name="name" placeholder="Имя" required="required"/>
+          <div class="form">
+            <div class="form__wrap">
+              <form class="form__form" enctype="multipart/form-data" action="#" method="post" id="form" onsubmit="send(event, 'send-mail.php')">
+                <div class="lng-popup-inputs">
+                  <div class="form__group">
+                    <input class="form__control" type="text" id="name" name="name" placeholder="Имя" required="required"/>
+                  </div>
+                  <div class="form__group">
+                    <input class="form__control" type="text" id="phone" name="phone" placeholder="Телефон" required="required"/>
+                  </div>
+                  <div class="form__group">
+                    <input class="form__control" type="text" id="email" name="email" placeholder="Email" required="required"/>
+                  </div>
+                  <button class="form__btn btn" type="submit">Отправить</button>
+                </div>
+              </form>
             </div>
-            <div class="form__group">
-              <input class="form__control" type="text" name="phone" placeholder="Телефон" required="required"/>
-            </div>
-            <div class="form__group">
-              <input class="form__control" type="text" name="email" placeholder="Email" required="required"/>
-            </div>
-            <button class="form__btn btn" type="submit">Отправить</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
     <script src="static/js/jquery-3.1.1.min.js"></script>
     <script src="static/js/gsap.min.js"></script>
-    <script src="static/js/slick.min.js"></script>
-    <script src="static/js/custom.min.js"></script>
+    <script src="static/js/lang.js"></script>
+    <script src="static/js/custom.js"></script>
   </body>
 </html>

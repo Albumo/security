@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>Security project</title>
+    <title>T-security.com.ua</title>
     <meta content="" name="description"/>
     <meta content="" name="keywords"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,40 +12,49 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"><link href="static/css/main.min.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="favicon.ico"/><!--[if lt IE 9 ]><script src="static/js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar"><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   </head>
   <body>
-    <div class="w-outer"><!-- skin 1 -->
-      <div class="w-inner">
-        <header class="header js-header">
-          <div class="w-center">
-            <div class="header__wrapper js-header-toggle"><a class="header__logo-wrap" href="/">
-                <div class="header__logo"><img src="static/img/content/logo.svg" alt="logo"></div></a>
+    <div class="w-outer">
+      <header class="header js-header">
+        <div class="w-center">
+          <div class="header__wrapper js-header-toggle"><a class="header__logo-wrap" href="/">
+              <div class="header__logo"><img src="static/img/content/logo.svg" alt="logo"/></div></a>
+            <div class="header__countries-wrap">
+              <div class="countries">
+                <div class="countries__select">
+                  <select class="countries__lang">
+                    <option value="ua">UA</option>
+                    <option value="ru">RU</option>
+                  </select>
+                </div>
+              </div>
               <div class="header__burger-menu-wrap js-header-burger">
                 <div class="header__burger-menu"><span></span><span></span><span></span></div>
               </div>
               <nav class="header__nav">
                 <div class="header__nav-wrap">
                   <div class="header__navi">
-                    <ul class="header__list header__menu-inner">
-                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" href="/">Главная</a></li>
-                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" href="/about.html">Компания</a></li>
+                    <ul class="header__list header__menu-inner lng-header">
+                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" href="/" data-gxlang="inicio.home">Головна</a></li>
+                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" data-gxlang="nav.about" href="/about.html">Компанія</a></li>
                       <li class="header__list-item header__menu-item drop-wrap">
-                        <div class="header__menu-link header__list-link header__link active">Услуги</div>
+                        <div class="header__menu-link header__list-link header__link">Послуги</div>
                         <ul class="header__dropdown">
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/alarm.html">Монтаж систем охранной сигнализации</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/automation.html">Автоматизация и диспетчеризация</br> инженерных систем зданий</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link active" href="/ckc.html">Задачи и преимущества СКС</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/electrical.html">Электромонтажные работы</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/fire.html">Установка автоматических систем противопожарной защиты</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/multimedia.html">Монтаж мультимедийных систем</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/skud.html">Установка системы СКУД</a></li>
-                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/video.html">Установка систем видеонаблюдения</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/alarm.html">Охоронна сигналізація</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/automation.html">Автоматизація та диспетчеризація</br> інженерних систем</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/ckc.html">Структуровані кабельні системи (СКС)</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/electrical.html">Електромонтажні роботи</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/fire.html">Системи пожежної безпеки</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/multimedia.html">Мультимедійні системи</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/skud.html">Системи контролю доступу (СКУД)</a></li>
+                          <li class="header__dropdown-item"><a class="header__dropdown-link" href="/video.html">Відеоспостереження</a></li>
                         </ul>
                       </li>
-                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" href="/#contacts">Контакты</a></li>
+                      <li class="header__list-item header__menu-item"><a class="header__menu-link header__list-link js-to-item" href="#contacts">Контакти</a></li>
                       <li class="header__list-item header__menu-item">
                         <div class="btn-wrap">
-                          <button class="btn popup-btn">Связаться с нами</button>
+                          <button class="btn popup-btn lng-enu-btn">Зв'язатися з нами</button>
                         </div>
                       </li>
                     </ul>
@@ -54,12 +63,14 @@
               </nav>
             </div>
           </div>
-        </header>
+        </div>
+      </header><!-- skin 1 -->
+      <div class="w-inner">
         <div class="w-center">
           <div class="video-banner">
             <div class="video-banner__wrap">
               <div class="video-banner__text">
-                <h1>Монтаж</br> структурированных</br> кабельных сетей</br> (СКС)</h1>
+                <h1 class="lng-ckc-title">Монтаж</br> структурованих</br> кабельних систем</br> (СКМ)</h1>
               </div>
               <div class="video-banner__video">
                 <video autoplay muted>
@@ -69,127 +80,105 @@
             </div>
           </div>
           <div class="mouse"></div>
-          <p>Структурированная кабельная сеть (СКС) – это система, выполняющая множество функций и объединяющая видеонаблюдение, телефонную связь, ЛВС, системы доступа и контроля, охранную и пожарную сигнализацию. Заказать услуги по монтажу и обслуживанию структурированной кабельной системы можно на сайте t-security.com.ua.</p>
-          <div class="w-gap-md"></div>
-          <h3>Задачи и преимущества СКС</h3>
-          <p>Основная задача – это разделение кабелей и коммутационного оборудования:</p>
-          <ul class="decorated-list">
-            <li class="decorated-list__item">Систематизировать (установить маркировку на кабели) и упорядочить управление существующей сети;</li>
-            <li class="decorated-list__item">Создать возможность для расширения или изменения плана конфигурации;</li>
-            <li class="decorated-list__item">Обеспечить разноплановую трансляцию – передачу информационного потока или звука (аудио), а также видеотрансляцию;</li>
-            <li class="decorated-list__item">Повысить функциональные возможности слаботочных систем.</li>
-          </ul>
-          <p>Преимущества</p>
-          <ul class="decorated-list">
-            <li class="decorated-list__item">Позволяет настроить сеть по индивидуальным требованиям заказчика;</li>
-            <li class="decorated-list__item">Продолжительный эксплуатационный период;</li>
-            <li class="decorated-list__item">Высокий показатель скорости передачи данных;</li>
-            <li class="decorated-list__item">Оборудование может комплектоваться кабелями разных компаний-производителей;</li>
-            <li class="decorated-list__item">Возможность быстрой замены поврежденного оборудования;</li>
-            <li class="decorated-list__item">Удобство в обслуживании.</li>
-          </ul>
-          <p>Доверить установку СКС нужно профессионалам из компании ТОВ «ІБК «Територія Безпеки» – это гарантия качественно смонтированных сетей, что повышает уровень безопасности передачи конфиденциальной информации.</p>
-          <p>Компания ТОВ «ІБК «Територія Безпеки» предлагает качественный монтаж СКС в Киеве и на другой территории Украины по доступной цене. Расценки на монтажные работы указаны в прайсе на официальном сайте компании – t-security.com.ua.</p>
-          <div class="w-gap-md"></div>
-          <h3>Этапы установки кабельной сети</h3>
-          <p>Этапы выполнения монтажных работ СКС:</p>
-          <ul class="decorated-list">
-            <li class="decorated-list__item">Полное изучение объекта и соответствие проекту (сотрудники получают от заказчика проект и выезжают на объект);</li>
-            <li class="decorated-list__item">Подбор оборудования (подбирают необходимую маркировку кабеля и устройств), а также комплектующих для установки системы на объекте. Чаще всего используются 2 типа проводов – многожильные (медные) и цельнотянутые (омедненные). Рекомендуется устанавливать многожильный патч-корд, который обеспечивает длительный эксплуатационный период сети;</li>
-            <li class="decorated-list__item">Подбор узкоспециализированного инструментария для быстрого и качественного монтажа СКС;</li>
-            <li class="decorated-list__item">Просверливание отверстий в перекрытиях и стенах для прокладки магистрали, установка розеток, гильз в отверстиях, сборка коммуникационных щитов;</li>
-            <li class="decorated-list__item">Протяжка кабелей по стенам и междуэтажному перекрытию строго через установленные гильзы, что сохранит изоляцию в витой парке и не допустит затухание сигнала;</li>
-            <li class="decorated-list__item">Подключение и разделка кабелей – установка коммутационных панелей или розеток;</li>
-            <li class="decorated-list__item">Подключение и настройка сетевой аппаратуры;</li>
-            <li class="decorated-list__item">Тестирование установленной системы. Тестирование проводится при помощи специализированных устройств, которое проверяет соответствие работы со стандартами, установленными для СКС;</li>
-            <li class="decorated-list__item">Запуск системы в эксплуатацию и сдача работы заказчику;</li>
-            <li class="decorated-list__item">Обучение сотрудников заказчика работе на данном оборудовании;</li>
-            <li class="decorated-list__item">Техподдержка</li>
-          </ul>
-          <div class="w-gap-md"></div>
-          <h3>Преимущества сотрудничества с ТОВ «ІБК «Територія Безпеки» з Основными преимуществами сотрудничества являются:</h3>
-          <ul class="decorated-list">
-            <li class="decorated-list__item">Возможность заказать структурированные кабельные системы «под ключ» – проект, монтаж, оборудование и комплектующие для установки, послегарантийное и гарантийное обслуживание, ремонт и замену вышедших из строя устройств;</li>
-            <li class="decorated-list__item">Низкая стоимость монтажных работ СКС и оборудования. Невысокая цена на кабели и комплектующие обусловлена прямыми поставками с завода-изготовителя;</li>
-            <li class="decorated-list__item">Высокое качество оборудования и выполненного монтажа;</li>
-            <li class="decorated-list__item">Оперативность приема заказа и выполнения работ.</li>
-            <li class="decorated-list__item">Обучение сотрудников заказчика работе на данном оборудовании;</li>
-          </ul>
-          <p>Многолетний опыт и высокая квалификация сотрудников ТОВ «ІБК «Територія Безпеки» позволит быстро и качественно проложить структурированную кабельную сеть и установить электронное оборудование, в соответствии с проектной документацией.</p>
+          <div class="lng-ckc-text">
+            <p>Структурована кабельна мережа (СКМ) – це система, що виконує безліч функцій та об'єднує локальну обчислювальну мережу, відеоспостереження, телефонний зв'язок, системи контролю доступу, охоронну та пожежну сигналізацію, усіляку автоматизацію та диспетчеризацію систем.</p>
+            <div class="w-gap-md"></div>
+            <p>Основна перевага СКС полягає в оперативній передачі інформації незалежно від її характеру та властивостей.</p>
+            <p>Завдання системи забезпечити різнопланову трансляцію – передачу інформаційного цифрового потоку чи звуку (аудіо), і навіть відеотрансляцію, підвищити функціональні можливості слаботочних систем.</p>
+            <p>Переваги побудови сучасних структурованих кабельних мереж:</p>
+            <ul class="decorated-list">
+              <li class="decorated-list__item">Дозволяє налаштувати мережу за індивідуальними вимогами замовника;</li>
+              <li class="decorated-list__item">Тривалий експлуатаційний період;</li>
+              <li class="decorated-list__item">Високий показник швидкості передачі;</li>
+              <li class="decorated-list__item">Устаткування може комплектуватись кабелями різних компаній-виробників;</li>
+              <li class="decorated-list__item">Можливість швидкої заміни пошкодженого обладнання;</li>
+              <li class="decorated-list__item">Зручність в обслуговуванні</li>
+            </ul>
+            <p>Довірити встановлення структурованих кабельних мереж СКС потрібно професіоналам із компанії ТОВ «ІБК «Територія Безпеки» – це гарантія якісно змонтованих мереж, що підвищує рівень безпеки передачі конфіденційної інформації.</p>
+          </div>
         </div>
         <div class="w-gap-lg">
           <div class="contact">
-            <div class="contact__wrap">
-              <div class="w-center">
-                <h3 class="contact__title" id="contacts">Всегда на связи!</h3>
-                <div class="contact__text">Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!</div>
-                <div class="contact__icons">
-                  <div class="contact__icon"><a class="contact__img contact__phone-wrap" href="tel:+38 (066) 245 85 35">
-                      <div class="contact__phone">+38 (066) 245 85 35</div></a></div>
-                  <div class="contact__icon"><a class="contact__img contact__phone-wrap" href="tel:+38 (044) 223 72 73">
-                      <div class="contact__phone">+38 (044) 223 72 73</div></a></div>
-                  <div class="contact__icon"><a class="contact__img contact__mail-wrap" href="mailto:t-security@ukr.net">
-                      <div class="contact__phone">t-security@ukr.net</div></a></div>
+            <div class="w-center">
+              <div class="contact__wrap">
+                <div class="contact__left-side">
+                  <h3 class="contact__title lng-cbanner-title" id="contacts">Завжди на зв'язку!</h3>
+                  <div class="contact__text lng-cbanner-txt">Чи готові почати свій наступний проект з нами? Чудово! Зателефонуйте нам або надішліть нам листа, і ми зв'яжемося з вами якнайшвидше!</div>
+                  <div class="contact__icons">
+                    <div class="contact__icon"><a class="contact__img contact__phone-wrap" href="tel:+38 (066) 245 85 35">
+                        <div class="contact__phone">+38 (066) 245 85 35</div></a></div>
+                    <div class="contact__icon"><a class="contact__img contact__phone-wrap" href="tel:+38 (044) 223 72 73">
+                        <div class="contact__phone">+38 (044) 223 72 73</div></a></div>
+                    <div class="contact__icon"><a class="contact__img contact__mail-wrap" href="mailto:t-security@ukr.net">
+                        <div class="contact__phone">t-security@ukr.net</div></a></div>
+                  </div>
+                  <div class="contact__btn-wrap">
+                    <button class="btn-secondary popup-btn lng-cbanner-btn">Зв'язатися з нами</button>
+                  </div>
                 </div>
-                <div class="contact__btn-wrap">
-                  <button class="btn-secondary popup-btn">Связаться с нами</button>
-                </div>
+                <div class="contact__right-side"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1602730048103!2d30.3633147158837!3d50.456740094792465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc91b1df271f%3A0xc4e7575dd6228554!2z0KLQpiBWTUIsINC_0YDQvtGB0L8uINCf0L7QsdC10LTRiywgMTM2LCDQmtC40LXQsiwgMDMxMTU!5e0!3m2!1sru!2sua!4v1658220407200!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
               </div>
             </div>
           </div>
         </div>
-        <footer class="footer">
-          <div class="msg-wrap">
-            <div class="msg" onclick="gsapMsg.reverse()"></div>
-          </div>
-          <div class="w-center">
-            <div class="footer__wrap"><a class="footer__logo-wrap" href="/">
-                <div class="footer__logo"><img src="static/img/content/logo.svg" alt="logo"></div></a>
-              <div class="footer__menu">
-                <div class="footer__title">Меню</div>
-                <ul class="footer__list">
-                  <li class="footer__list-item"><a class="footer__menu-link js-to-item" href="/">Главная</a></li>
-                  <li class="footer__list-item"><a class="footer__menu-link js-to-item" href="/about.html">Компания</a></li>
-                  <li class="footer__list-item"><a class="footer__menu-link js-to-item" href="/#contacts">Контакты</a></li>
-                </ul>
-              </div>
-              <div class="footer__social-block">
-                <div class="footer__title">Соц. сети</div>
-                <ul class="footer__list">
-                  <li class="footer__list-item footer__social"><a class="footer__menu-link footer__fb" href="/"></a></li>
-                  <li class="footer__list-item footer__social"><a class="footer__menu-link footer__inst" href="/"></a></li>
-                  <li class="footer__list-item footer__social"><a class="footer__menu-link footer__telegram" href="/"></a></li>
-                </ul>
-              </div>
-              <div class="footer__address">
-                <div class="footer__title">Адрес</div>
-                <div class="footer__menu-text">Проспект Победы,</br> 136, Київ, 03115</div>
-              </div>
+      </div>
+      <footer class="footer">
+        <div class="msg-wrap">
+          <div class="msg" onclick="gsapMsg.reverse()"></div>
+        </div>
+        <div class="w-center">
+          <div class="footer__wrap"><a class="footer__logo-wrap" href="/">
+              <div class="footer__logo"><img src="static/img/content/logo.svg" alt="logo"/></div></a>
+            <div class="footer__menu">
+              <div class="footer__title lng-footer-title1">Меню</div>
+              <ul class="footer__list lng-footer">
+                <li class="footer__list-item"><a class="footer__menu-link js-to-item" href="/">Главная</a></li>
+                <li class="footer__list-item"><a class="footer__menu-link js-to-item" href="/about.html">Компания</a></li>
+                <li class="footer__list-item"><a class="footer__menu-link js-to-item lng-footer-contacts" href="#contacts">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__social-block">
+              <div class="footer__title lng-footer-title2">Соц. сети</div>
+              <ul class="footer__list">
+                <li class="footer__list-item footer__social"><a class="footer__menu-link footer__fb" href="/"></a></li>
+                <li class="footer__list-item footer__social"><a class="footer__menu-link footer__inst" href="/"></a></li>
+                <li class="footer__list-item footer__social"><a class="footer__menu-link footer__telegram" href="/"></a></li>
+              </ul>
+            </div>
+            <div class="footer__address">
+              <div class="footer__title lng-footer-title3">Адрес</div>
+              <div class="footer__menu-text lng-footer-title4">Проспект Победы,</br> 136, Київ, 03115</div>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
       <div class="popup">
         <div class="popup__wrap"><span class="js-close form__close popup__close"></span>
           <div class="popup__title">Напишите нам</div>
-          <form class="form__form" enctype="multipart/form-data" action="" method="post" id="form" onsubmit="send(event, 'send.php')">
-            <div class="form__group">
-              <input class="form__control" type="text" name="name" placeholder="Имя" required="required"/>
+          <div class="form">
+            <div class="form__wrap">
+              <form class="form__form" enctype="multipart/form-data" action="#" method="post" id="form" onsubmit="send(event, 'send-mail.php')">
+                <div class="lng-popup-inputs">
+                  <div class="form__group">
+                    <input class="form__control" type="text" id="name" name="name" placeholder="Имя" required="required"/>
+                  </div>
+                  <div class="form__group">
+                    <input class="form__control" type="text" id="phone" name="phone" placeholder="Телефон" required="required"/>
+                  </div>
+                  <div class="form__group">
+                    <input class="form__control" type="text" id="email" name="email" placeholder="Email" required="required"/>
+                  </div>
+                  <button class="form__btn btn" type="submit">Отправить</button>
+                </div>
+              </form>
             </div>
-            <div class="form__group">
-              <input class="form__control" type="text" name="phone" placeholder="Телефон" required="required"/>
-            </div>
-            <div class="form__group">
-              <input class="form__control" type="text" name="email" placeholder="Email" required="required"/>
-            </div>
-            <button class="form__btn btn" type="submit">Отправить</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
     <script src="static/js/jquery-3.1.1.min.js"></script>
     <script src="static/js/gsap.min.js"></script>
-    <script src="static/js/slick.min.js"></script>
-    <script src="static/js/custom.min.js"></script>
+    <script src="static/js/lang.js"></script>
+    <script src="static/js/custom.js"></script>
   </body>
 </html>

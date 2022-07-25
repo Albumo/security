@@ -4,154 +4,48 @@ block content
     | <!-- skin 1 -->
 
     .w-inner
-        header.header.js-header
-            .w-center
-                .header__wrapper.js-header-toggle
-                    a(href="/").header__logo-wrap
-                        .header__logo
-                            img(src="static/img/content/logo.svg" alt="logo")
-                    .header__burger-menu-wrap.js-header-burger
-                        .header__burger-menu
-                            span
-                            span
-                            span
-                    nav.header__nav
-                        .header__nav-wrap
-                            .header__navi
-                                ul.header__list.header__menu-inner
-                                    li.header__list-item.header__menu-item
-                                        a.header__menu-link.header__list-link.js-to-item(href="/") Главная
-                                    li.header__list-item.header__menu-item
-                                        a.header__menu-link.header__list-link.js-to-item(href="/about.html") Компания
-                                    li.header__list-item.header__menu-item.drop-wrap
-
-                                        .header__menu-link.header__list-link.header__link.active Услуги
-                                        ul.header__dropdown
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/alarm.html') Монтаж систем охранной сигнализации
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/automation.html') Автоматизация и диспетчеризация</br> инженерных систем зданий
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/ckc.html') Задачи и преимущества СКС
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/electrical.html') Электромонтажные работы
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link.active(href='/fire.html') Установка автоматических систем противопожарной защиты
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/multimedia.html') Монтаж мультимедийных систем
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/skud.html') Установка системы СКУД
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/video.html') Установка систем видеонаблюдения
-
-                                    li.header__list-item.header__menu-item
-                                        a.header__menu-link.header__list-link.js-to-item(href="/#contacts") Контакты
-                                    li.header__list-item.header__menu-item
-                                        .btn-wrap
-                                            button.btn.popup-btn Связаться с нами
         .w-center
             .video-banner
                 .video-banner__wrap
                     .video-banner__text
-                        h1 Установка</br> автоматических</br> систем</br> противопожарной</br> защиты
+                        h1.lng-fire-title Системи пожежної безпеки
 
                     .video-banner__video
                         video( autoplay muted)
                             source(src="static/img/content/7.mp4")
             .mouse
 
+            .lng-fire-text
+                p Системи протипожежного захисту – це комплекс технічних засобів, встановлений за об'єктом, що захищається, який призначений для виявлення, локалізації та ліквідації пожежі без втручання людини, захисту людей, матеріальних цінностей та навколишнього середовища від впливу небезпечних факторів пожежі.
+                p Вся діяльність у цій галузі стандартизована та сертифікована – виробництво, проектування, впровадження та обслуговування.
+                p Системи протипожежного захисту встановлюються на всіх адміністративних, виробничих, соціальних об'єктах, тобто скрізь, де є загроза життю людей у разі пожежі. Комплекс протипожежного захисту включає:
 
-            p Современные автоматизированные системы противопожарной защиты (АСПЗ) включают в себя большое количество компонентов, призванных служить одной цели – предупредить возникновение пожара, спасти жизни людей и имущество в случае возникновения пожарной опасности. АСПЗ разрабатываются строго в соответствии с проектной документацией и призваны автоматически обнаруживать опасность пожара, оповещать об этом с помощью сигнализации, руководить действиями людей во время эвакуации и тушении пожаров.
-            p Системы противопожарной защиты устанавливаются на всех административных, производственных, социальных объектах, то есть везде, где есть угроза жизни людей в случае пожара. Комплекс противопожарной защиты включает в себя:
-            ul.decorated-list
-                li.decorated-list__item Устройства обнаружения дыма (датчики);
-                li.decorated-list__item Передача данных датчиков на приемно-контрольное оборудование;
-                li.decorated-list__item Автоматическое оборудование противодымной защиты (вытяжные вентиляторы);
-                li.decorated-list__item автоматизированная система тушения пожаров.
-                li.decorated-list__item Замена или установка осветительных устройств;
-                li.decorated-list__item Электромонтажные услуги по установке заземления;
-                li.decorated-list__item Комплектация и монтаж электроустановочного оборудования;
-                li.decorated-list__item Штробление стен под проводку;
-                li.decorated-list__item Пробивка отверстий в межэтажных и стеновых перегородках;
-                li.decorated-list__item Установка розеток, выключателей;
-                li.decorated-list__item Монтаж электросчетчика.
-            .w-gap-md
-            h3 Процедура проведение электромонтажа
-            p Замена старых электрических сетей или прокладка новой электропроводки – это процесс, при котором возникает много мусора и пыли (штробление стен, пробивка отверстий), поэтому из жилой комнаты и офиса необходимо вынести оргтехнику и компьютеры, а также мягкую мебель, а остальные предметы интерьера плотно укрыть строительным полиэтиленом. После получения проекта электропроводки, монтер приступает к разметке всех основных узлов. Стоимость электромонтажных работ зависит от количества комнат в здании, сложности проекта и индивидуальных требований заказчика.
-            p При замене электрических сетей на новую электропроводку, мастер выполняет такие этапы:
-
-            ul.decorated-list
-                li.decorated-list__item Демонтирует розетки, выключатели;
-                li.decorated-list__item Вытягивает старые провода;
-                li.decorated-list__item Проводит штробление стен;
-                li.decorated-list__item Укладывает кабели необходимого сечения;
-                li.decorated-list__item Устанавливает осветительное оборудование, выключатели и розетки;
-                li.decorated-list__item Подсоединяет провода к электрическому счетчику;
-                li.decorated-list__item Проверяет работу всех точек электропитания;
-                li.decorated-list__item При выявлении неполадок, оперативно их устраняет;
-                li.decorated-list__item Сдает электропроводку в эксплуатацию.
-            p Также электрики компании ТОВ «ІБК «Територія Безпеки» кроме электромонтажных работ могут провести ремонт осветительных приборов, электрощитов и электросчётчиков. Цены на проведение ремонта указаны в прейскуранте на сайте.
-            .w-gap-md
-            h3 Преимущества сотрудничества с компанией ТОВ «ІБК «Територія Безпеки»
-
-            p Без электричества невозможно представить даже функционирование дома, не говоря об офисе или предприятии. От электросети питается крупная и мелкая бытовая техника (холодильник, стиральная и посудомоечная машина, микроволновка и кухонный комбайн и др), электроника (телевизоры, приставки, музыкальные центры), компьютерная и оргтехника. Чтобы обезопасить жилище от замыкания, которое приводит к пожарам и потери имущества и человеческой жизни не стоит доверять проведение электромонтажа «домашнему мастеру», а необходимо заказать электромонтажные работы на сайте t-security.com.ua. Основные преимущества сотрудничества с профессионалами:
-
-            ul.decorated-list
-                li.decorated-list__item Все этапы монтажа электричества проводятся в соответчики с нормами ПУЭ и ДБН;
-                li.decorated-list__item Соблюдение установленного графика;
-                li.decorated-list__item Ежедневный контроль качества монтажа;
-                li.decorated-list__item Доступная цена на электрическое оборудование, фурнитуру, установку и ремонт.
-            p Установка электропроводки от компании ТОВ «ІБК «Територія Безпеки» советует всем стандартам. Заказать электромонтажные работы можно на сайте t-security.com.ua., заполнив онлайн-заявку.
-
+                ul.decorated-list
+                    li.decorated-list__item Система пожежної сигналізації
+                    li.decorated-list__item Автоматична/автономна система пожежогасіння
+                    li.decorated-list__item Система оповіщення про пожежу та управління евакуацією
+                    li.decorated-list__item Система протидимного захисту
+                    li.decorated-list__item Система централізованого пожежного спостереження
+                    li.decorated-list__item Система диспетчеризації СПЗ
         .w-gap-lg
             .contact
-                .contact__wrap
-                    .w-center
-                        h3#contacts.contact__title Всегда на связи!
-                        .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
-                        .contact__icons
-                            .contact__icon
-                                a.contact__img.contact__phone-wrap(href="tel:+38 (066) 245 85 35")
-                                    .contact__phone +38 (066) 245 85 35
+                .w-center
+                    .contact__wrap
+                        .contact__left-side
+                            h3#contacts.contact__title.lng-cbanner-title Завжди на зв'язку!
+                            .contact__text.lng-cbanner-txt Чи готові почати свій наступний проект з нами? Чудово! Зателефонуйте нам або надішліть нам листа, і ми зв'яжемося з вами якнайшвидше!
+                            .contact__icons
+                                .contact__icon
+                                    a.contact__img.contact__phone-wrap(href="tel:+38 (066) 245 85 35")
+                                        .contact__phone +38 (066) 245 85 35
 
-                            .contact__icon
-                                a.contact__img.contact__phone-wrap(href="tel:+38 (044) 223 72 73")
-                                    .contact__phone +38 (044) 223 72 73
-                            .contact__icon
-                                a.contact__img.contact__mail-wrap(href="mailto:t-security@ukr.net")
-                                    .contact__phone t-security@ukr.net
-                        .contact__btn-wrap
-                            button.btn-secondary.popup-btn Связаться с нами
-        footer.footer
-            .msg-wrap
-                .msg(onclick='gsapMsg.reverse()')
-            .w-center
-                .footer__wrap
-                    a(href="/").footer__logo-wrap
-                        .footer__logo
-                            img(src="static/img/content/logo.svg" alt="logo")
-                    .footer__menu
-                        .footer__title Меню
-
-                        ul.footer__list
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/") Главная
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/about.html") Компания
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/#contacts") Контакты
-                    .footer__social-block
-                        .footer__title Соц. сети
-                        ul.footer__list
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link.footer__fb(href="/")
-
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link.footer__inst(href="/")
-
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link.footer__telegram(href="/")
-
-                    .footer__address
-                        .footer__title Адрес
-                        .footer__menu-text Проспект Победы,</br> 136, Київ, 03115
+                                .contact__icon
+                                    a.contact__img.contact__phone-wrap(href="tel:+38 (044) 223 72 73")
+                                        .contact__phone +38 (044) 223 72 73
+                                .contact__icon
+                                    a.contact__img.contact__mail-wrap(href="mailto:t-security@ukr.net")
+                                        .contact__phone t-security@ukr.net
+                            .contact__btn-wrap
+                                button.btn-secondary.popup-btn.lng-cbanner-btn Зв'язатися з нами
+                        .contact__right-side
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1602730048103!2d30.3633147158837!3d50.456740094792465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc91b1df271f%3A0xc4e7575dd6228554!2z0KLQpiBWTUIsINC_0YDQvtGB0L8uINCf0L7QsdC10LTRiywgMTM2LCDQmtC40LXQsiwgMDMxMTU!5e0!3m2!1sru!2sua!4v1658220407200!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

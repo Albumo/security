@@ -3,11 +3,4 @@ mixin popup(formType)
         .popup__wrap
             span.js-close.form__close.popup__close
             .popup__title Напишите нам
-            form.form__form(enctype="multipart/form-data" action="" method="post" id="form" onsubmit="send(event, 'send.php')")
-                .form__group
-                    input.form__control(type="text" name="name" placeholder="Имя" required)
-                .form__group
-                    input.form__control(type="text" name="phone" placeholder="Телефон" required)
-                .form__group
-                    input.form__control(type="text" name="email" placeholder="Email" required)
-                button.form__btn.btn(type="submit") Отправить
+            +form

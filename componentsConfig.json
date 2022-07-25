@@ -19,5 +19,10 @@
   "component_form": {
     "number": "S_1",
     "name": "form"
+  },
+
+  "component_countries": {
+    "number": "S_1",
+    "name": "countries"
   }
 }

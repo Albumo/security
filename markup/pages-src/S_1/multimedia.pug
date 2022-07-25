@@ -4,117 +4,45 @@ block content
     | <!-- skin 1 -->
 
     .w-inner
-        header.header.js-header
-            .w-center
-                .header__wrapper.js-header-toggle
-                    a(href="/").header__logo-wrap
-                        .header__logo
-                            img(src="static/img/content/logo.svg" alt="logo")
-                    .header__burger-menu-wrap.js-header-burger
-                        .header__burger-menu
-                            span
-                            span
-                            span
-                    nav.header__nav
-                        .header__nav-wrap
-                            .header__navi
-                                ul.header__list.header__menu-inner
-                                    li.header__list-item.header__menu-item
-                                        a.header__menu-link.header__list-link.js-to-item(href="/") Главная
-                                    li.header__list-item.header__menu-item
-                                        a.header__menu-link.header__list-link.js-to-item(href="/about.html") Компания
-                                    li.header__list-item.header__menu-item.drop-wrap
-
-                                        .header__menu-link.header__list-link.header__link.active Услуги
-                                        ul.header__dropdown
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/alarm.html') Монтаж систем охранной сигнализации
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/automation.html') Автоматизация и диспетчеризация</br> инженерных систем зданий
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/ckc.html') Задачи и преимущества СКС
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/electrical.html') Электромонтажные работы
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/fire.html') Установка автоматических систем противопожарной защиты
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link.active(href='/multimedia.html') Монтаж мультимедийных систем
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/skud.html') Установка системы СКУД
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/video.html') Установка систем видеонаблюдения
-
-                                    li.header__list-item.header__menu-item
-                                        a.header__menu-link.header__list-link.js-to-item(href="/#contacts") Контакты
-                                    li.header__list-item.header__menu-item
-                                        .btn-wrap
-                                            button.btn.popup-btn Связаться с нами
         .w-center
             .video-banner
                 .video-banner__wrap
                     .video-banner__text
-                        h1 Монтаж</br> мультимедийных</br> систем
+                        h1.lng-multimedia-title Монтаж</br> мультимедийных</br> систем
                     .video-banner__video
                         video( autoplay muted)
                             source(src="static/img/content/3.mp4")
             .mouse
 
+            .lng-multimedia-text
+                p Встановлення мультимедіа, переговорних пристроїв, озвучення офісних та приватних приміщень – це сучасний тренд, який диктує нинішні реалії життя.
 
-            p Установка мультимедиа в современных офисах – это возможность не только корпоративной трансляции видео, но и решения важных коммуникационных задач (развернуть корпоративную сеть). Заказать установку мультимедийной системы на предприятии или офисе можно на сайте t-security.com.ua. Специалисты компании ТОВ «ІБК «Територія Безпеки» составят проект сети и смонтируют необходимое оборудование.
-            p Организовать передачу информации при помощи видеосигнала сегодня стало проще – нет необходимости прокладывать километры дорогостоящих кабелей, устройства подключаются в существующую сетевую инфраструктуру. Корпоративные сети необходимы для трансляции видео потока на производственных предприятиях, с несколькими и цехами, или в офисах крупных компаний.
-            p Современные мультимедийные плееры генерируют необходимый контент автоматически, и для его передачи не нужен обслуживающий персонал – любая информация передается по нескольким каналам одновременно. Для трансляции нужно использовать IP камеры, которые записывают и передают видео и звук.
-            p В комнатах для переговоров или в конференц-залах устанавливаются мультимедийные экраны, на которых можно просматривать контент с телефона или ноутбука при помощи передатчика.
-            p Установить мультимедиа в офисе нужно доверить профессионалам из компании ТОВ «ІБК «Територія Безпеки». Сотрудничество с квалифицированными специалистами – это гарантия качественно выполненных монтажных работ.
+                p Організувати передачу інформації за допомогою відеосигналу сьогодні стало простіше - немає необхідності прокладати кілометри дорогих кабелів, пристрої підключаються до існуючої інфраструктури мережі.
 
+                p Сучасні мультимедійні плеєри генерують необхідний контент автоматично і керуються віддалено, - будь-яка інформація передається кількома каналами одночасно.
+
+                p Для трансляції можна використовувати IP камери, які записують та передають відео та звук.
+
+                p У кімнатах для переговорів або конференц-залах встановлюються мультимедійні екрани, на яких можна переглядати контент із телефону або ноутбука за допомогою передавача.
         .w-gap-lg
             .contact
-                .contact__wrap
-                    .w-center
-                        h3#contacts.contact__title Всегда на связи!
-                        .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
-                        .contact__icons
-                            .contact__icon
-                                a.contact__img.contact__phone-wrap(href="tel:+38 (066) 245 85 35")
-                                    .contact__phone +38 (066) 245 85 35
+                .w-center
+                    .contact__wrap
+                        .contact__left-side
+                            h3#contacts.contact__title.lng-cbanner-title Завжди на зв'язку!
+                            .contact__text.lng-cbanner-txt Чи готові почати свій наступний проект з нами? Чудово! Зателефонуйте нам або надішліть нам листа, і ми зв'яжемося з вами якнайшвидше!
+                            .contact__icons
+                                .contact__icon
+                                    a.contact__img.contact__phone-wrap(href="tel:+38 (066) 245 85 35")
+                                        .contact__phone +38 (066) 245 85 35
 
-                            .contact__icon
-                                a.contact__img.contact__phone-wrap(href="tel:+38 (044) 223 72 73")
-                                    .contact__phone +38 (044) 223 72 73
-                            .contact__icon
-                                a.contact__img.contact__mail-wrap(href="mailto:t-security@ukr.net")
-                                    .contact__phone t-security@ukr.net
-                        .contact__btn-wrap
-                            button.btn-secondary.popup-btn Связаться с нами
-        footer.footer
-            .msg-wrap
-                .msg(onclick='gsapMsg.reverse()')
-            .w-center
-                .footer__wrap
-                    a(href="/").footer__logo-wrap
-                        .footer__logo
-                            img(src="static/img/content/logo.svg" alt="logo")
-                    .footer__menu
-                        .footer__title Меню
-
-                        ul.footer__list
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/") Главная
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/about.html") Компания
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/#contacts") Контакты
-                    .footer__social-block
-                        .footer__title Соц. сети
-                        ul.footer__list
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link.footer__fb(href="/")
-
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link.footer__inst(href="/")
-
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link.footer__telegram(href="/")
-
-                    .footer__address
-                        .footer__title Адрес
-                        .footer__menu-text Проспект Победы,</br> 136, Київ, 03115
+                                .contact__icon
+                                    a.contact__img.contact__phone-wrap(href="tel:+38 (044) 223 72 73")
+                                        .contact__phone +38 (044) 223 72 73
+                                .contact__icon
+                                    a.contact__img.contact__mail-wrap(href="mailto:t-security@ukr.net")
+                                        .contact__phone t-security@ukr.net
+                            .contact__btn-wrap
+                                button.btn-secondary.popup-btn.lng-cbanner-btn Зв'язатися з нами
+                        .contact__right-side
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1602730048103!2d30.3633147158837!3d50.456740094792465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc91b1df271f%3A0xc4e7575dd6228554!2z0KLQpiBWTUIsINC_0YDQvtGB0L8uINCf0L7QsdC10LTRiywgMTM2LCDQmtC40LXQsiwgMDMxMTU!5e0!3m2!1sru!2sua!4v1658220407200!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

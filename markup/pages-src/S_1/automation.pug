@@ -4,150 +4,78 @@ block content
     | <!-- skin 1 -->
 
     .w-inner
-        header.header.js-header
-            .w-center
-                .header__wrapper.js-header-toggle
-                    a(href="/").header__logo-wrap
-                        .header__logo
-                            img(src="static/img/content/logo.svg" alt="logo")
-                    .header__burger-menu-wrap.js-header-burger
-                        .header__burger-menu
-                            span
-                            span
-                            span
-                    nav.header__nav
-                        .header__nav-wrap
-                            .header__navi
-                                ul.header__list.header__menu-inner
-                                    li.header__list-item.header__menu-item
-                                        a.header__menu-link.header__list-link.js-to-item(href="/") Главная
-                                    li.header__list-item.header__menu-item
-                                        a.header__menu-link.header__list-link.js-to-item(href="/about.html") Компания
-                                    li.header__list-item.header__menu-item.drop-wrap
 
-                                        .header__menu-link.header__list-link.header__link.active Услуги
-                                        ul.header__dropdown
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/alarm.html') Монтаж систем охранной сигнализации
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link.active(href='/automation.html') Автоматизация и диспетчеризация</br> инженерных систем зданий
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/ckc.html') Задачи и преимущества СКС
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/electrical.html') Электромонтажные работы
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/fire.html') Установка автоматических систем противопожарной защиты
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/multimedia.html') Монтаж мультимедийных систем
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/skud.html') Установка системы СКУД
-                                            li.header__dropdown-item
-                                                a.header__dropdown-link(href='/video.html') Установка систем видеонаблюдения
-
-                                    li.header__list-item.header__menu-item
-                                        a.header__menu-link.header__list-link.js-to-item(href="/#contacts") Контакты
-                                    li.header__list-item.header__menu-item
-                                        .btn-wrap
-                                            button.btn.popup-btn Связаться с нами
         .w-center
             .video-banner
                 .video-banner__wrap
                     .video-banner__text
-                        h1 Автоматизация и</br> диспетчеризация</br> инженерных</br> систем зданий
+                        h1.lng-automation-title Автоматизація та<br> диспетчеризація<br> інженерних<br> систем
+
                     .video-banner__video
                         video( autoplay muted)
                             source(src="static/img/content/2.mp4")
             .mouse
 
+            .lng-automation-text
+                p Сучасна будівля – це комплекс інженерних систем – водопостачання та каналізація, вентиляція та кондиціювання, охоронна та пожежна сигналізація. Несправності в одній із мереж створюють небезпеку і втрату майна та здоров'я людей, які перебувають у будівлі. Своєчасний контроль та реагування на дані несправності забезпечить система диспетчеризації та автоматизації. Замовити проект, монтаж автоматизації інженерних систем будівель та споруд можна на сайті компанії ТОВ «ІБК «Територія Безпеки» – t-security.com.ua.
+                .w-gap-md
+                h3 Автоматизована диспетчеризація
+                p Автоматизація інженерних систем будівель представляє виконання таких функцій:
+                ul.decorated-list
+                    li.decorated-list__item Підтримка та контроль оптимальних технічних параметрів комунікацій та систем;
+                    li.decorated-list__item Оптимізація роботи всіх систем;
+                    li.decorated-list__item Підвищення ресурсу функціонування устаткування;
+                    li.decorated-list__item Зниження витрат енергетичних ресурсів;
+                    li.decorated-list__item Захист обладнання від позаштатних та аварійних ситуацій.
 
-            p Современное здание – это комплекс инженерных систем – водоснабжение и канализация, вентиляция и кондиционирование, охранная и пожарная сигнализация. Неисправности в одной из сетей создают опасность к потере имущества и здоровья. Своевременный контроль и реагирование могут обеспечить диспетчеризация и автоматизация. Заказать проект, монтаж автоматизация инженерных систем зданий и сооружений можно на сайте компании ТОВ «ІБК «Територія Безпеки» – t-security.com.ua.
-            .w-gap-md
-            h3 Автоматизированная диспетчеризация
-            p Автоматизация инженерных систем зданий представляет выполнение таких функций:
-            ul.decorated-list
-                li.decorated-list__item Поддержка и контроль оптимальных технических параметров коммуникаций и систем;
-                li.decorated-list__item Оптимизация работы;
-                li.decorated-list__item Повышение ресурса функционирования оборудования;
-                li.decorated-list__item Снижение расходов энергетических ресурсов;
-                li.decorated-list__item защита оборудования от нештатных и аварийных ситуаций.
+                p Впровадження автоматизованої диспетчеризації у будинках та на підприємствах замовник отримує:
+                ul.decorated-list
+                    li.decorated-list__item Централізований цілодобовий моніторинг стану інженерних мереж;
+                    li.decorated-list__item Збільшення комфорту будівлі;
+                    li.decorated-list__item Своєчасне оповіщення про несправності, що виникли;
+                    li.decorated-list__item Зниження витрат на обслуговуючий персонал будівлі.
+                .w-gap-md
+                h3 Комплекс робіт, які виконує ТОВ «ІБК «Територія Безпеки»
+                p Компанія ТОВ «ІБК «Територія Безпеки» пропонує комплекс послуг із виконання автоматичної диспетчеризації:
+                ul.decorated-list
+                    li.decorated-list__item Аудит будівлі для встановлення системи автоматизації;
+                    li.decorated-list__item Розробка проектної документації;
+                    li.decorated-list__item Розробка кошторису та робочої документації, заснованої на ТЗ замовника та отриманих при аудиті даних;
+                    li.decorated-list__item Погодження проекту та кошторису із замовником та з контролюючими органами;
+                    li.decorated-list__item Монтаж обладнання;
+                    li.decorated-list__item Контроль проведення робіт із встановлення систем;
+                    li.decorated-list__item Пуско-налагоджувальні роботи та введення обладнання в експлуатацію;
+                    li.decorated-list__item Технічне обслуговування в гарантійний та пост гарантійний термін.
+                p Компания ТОВ «ІБК «Територія Безпеки» является официальным дилером ведущих производителей охранного оборудования, поэтому при автоматизации и диспетчеризации инженерных систем используются передовые технологии.
+                .w-gap-md
+                h3 Переваги співпраці з нашою компанією
+                p До основних переваг відносяться:
+                ul.decorated-list
+                    li.decorated-list__item Високий рівень кваліфікації співробітників компанії;
+                    li.decorated-list__item – Доступна ціна на пропоновані послуги та обладнання. Низька вартість обладнання обумовлена прямими поставками із заводів-виробників, минаючи посередників;
+                    li.decorated-list__item Працюємо лише з оригінальними комплектуючими.
 
-            p Внедрение автоматизированной диспетчеризации в зданиях и на предприятиях заказчик получает:
-            ul.decorated-list
-                li.decorated-list__item Централизованный круглосуточный мониторинг состояния инженерных сетей;
-                li.decorated-list__item Увеличение комфорта в здании;
-                li.decorated-list__item Своевременное оповещение о возникших неисправностях;
-                li.decorated-list__item Снижение затрат на обслуживающий персонал здания.
-            .w-gap-md
-            h3 Комплекс работ, выполняемых ТОВ «ІБК «Територія Безпеки»
-            p Компания ТОВ «ІБК «Територія Безпеки» предлагает комплекс услуг по выполнению автоматической диспетчеризации:
-            ul.decorated-list
-                li.decorated-list__item Аудит здания для установки системы автоматизации;
-                li.decorated-list__item Разработка техдокументации и проекта;
-                li.decorated-list__item Разработка сметы и рабочей документации, основанной на ТЗ и полученных при аудите данных;
-                li.decorated-list__item Согласование проекта и сметы с заказчиком и с контролирующими органами;
-                li.decorated-list__item Монтаж оборудования;
-                li.decorated-list__item Контроль проведения работ по установке сетей;
-                li.decorated-list__item Пуско-наладочные работы и введение оборудования в эксплуатацию;
-                li.decorated-list__item обслуживание в гарантийный и пост гарантийный срок.
+                p Встановлення втоматизації та диспетчеризації інженерних мереж компанією ТОВ «ІБК Територія Безпеки» – це гарантія безпеки будівлі. Швидка окупність даної системи відбувається за рахунок економії енергоресурсів та зниження обслуговуючого персоналу.
 
-            p Компания ТОВ «ІБК «Територія Безпеки» является официальным дилером ведущих производителей охранного оборудования, поэтому при автоматизации и диспетчеризации инженерных систем используются передовые технологии.
-            .w-gap-md
-            h3 Преимущества сотрудничества с профессионалами
-            p К основным преимуществам относятся:
-            ul.decorated-list
-                li.decorated-list__item высокая степень квалификации сотрудников компании;
-                li.decorated-list__item – доступная цена на предлагаемые услуги и оборудование. Низкая стоимость оборудования обусловлена прямыми поставками с заводов-изготовителей, минуя посредников;
-                li.decorated-list__item работаем только с оригинальными запчастями и комплектующими.
-            p Установка сетей автоматизации и диспетчеризации инженерных сетей компанией ТОВ «ІБК «Територія Безпеки» – это гарантия безопасности здания. Быстрая окупаемость данной системы происходит за счет экономии энергоресурсов и снижение обслуживающего персонала.
         .w-gap-lg
             .contact
-                .contact__wrap
-                    .w-center
-                        h3#contacts.contact__title Всегда на связи!
-                        .contact__text Готовы начать свой следующий проект с нами? Отлично! Позвоните нам или отправьте нам письмо, и мы свяжемся с вами как можно скорее!
-                        .contact__icons
-                            .contact__icon
-                                a.contact__img.contact__phone-wrap(href="tel:+38 (066) 245 85 35")
-                                    .contact__phone +38 (066) 245 85 35
+                .w-center
+                    .contact__wrap
+                        .contact__left-side
+                            h3#contacts.contact__title.lng-cbanner-title Завжди на зв'язку!
+                            .contact__text.lng-cbanner-txt Чи готові почати свій наступний проект з нами? Чудово! Зателефонуйте нам або надішліть нам листа, і ми зв'яжемося з вами якнайшвидше!
+                            .contact__icons
+                                .contact__icon
+                                    a.contact__img.contact__phone-wrap(href="tel:+38 (066) 245 85 35")
+                                        .contact__phone +38 (066) 245 85 35
 
-                            .contact__icon
-                                a.contact__img.contact__phone-wrap(href="tel:+38 (044) 223 72 73")
-                                    .contact__phone +38 (044) 223 72 73
-                            .contact__icon
-                                a.contact__img.contact__mail-wrap(href="mailto:t-security@ukr.net")
-                                    .contact__phone t-security@ukr.net
-                        .contact__btn-wrap
-                            button.btn-secondary.popup-btn Связаться с нами
-        footer.footer
-            .msg-wrap
-                .msg(onclick='gsapMsg.reverse()')
-            .w-center
-                .footer__wrap
-                    a(href="/").footer__logo-wrap
-                        .footer__logo
-                            img(src="static/img/content/logo.svg" alt="logo")
-                    .footer__menu
-                        .footer__title Меню
-
-                        ul.footer__list
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/") Главная
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/about.html") Компания
-                            li.footer__list-item
-                                a.footer__menu-link.js-to-item(href="/#contacts") Контакты
-                    .footer__social-block
-                        .footer__title Соц. сети
-                        ul.footer__list
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link.footer__fb(href="/")
-
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link.footer__inst(href="/")
-
-                            li.footer__list-item.footer__social
-                                a.footer__menu-link.footer__telegram(href="/")
-
-                    .footer__address
-                        .footer__title Адрес
-                        .footer__menu-text Проспект Победы,</br> 136, Київ, 03115
+                                .contact__icon
+                                    a.contact__img.contact__phone-wrap(href="tel:+38 (044) 223 72 73")
+                                        .contact__phone +38 (044) 223 72 73
+                                .contact__icon
+                                    a.contact__img.contact__mail-wrap(href="mailto:t-security@ukr.net")
+                                        .contact__phone t-security@ukr.net
+                            .contact__btn-wrap
+                                button.btn-secondary.popup-btn.lng-cbanner-btn Зв'язатися з нами
+                        .contact__right-side
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1602730048103!2d30.3633147158837!3d50.456740094792465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc91b1df271f%3A0xc4e7575dd6228554!2z0KLQpiBWTUIsINC_0YDQvtGB0L8uINCf0L7QsdC10LTRiywgMTM2LCDQmtC40LXQsiwgMDMxMTU!5e0!3m2!1sru!2sua!4v1658220407200!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
